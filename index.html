@@ -1,1107 +1,293 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name=description content="Discover my personal project LakesCorp"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <meta name="description" content="Discover the portfolio of Pablo Fernández Lagos (LagosProject), featuring cutting-edge projects in bioinformatics, artificial intelligence, software development, and digital art."/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pablo Fernández Lagos - AI, Software & Bioinformatics</title>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     <link rel="stylesheet" type="text/css" href="index.css" />
-    <style></style>
     <link rel="stylesheet" type="text/css" href="styleguide.css" />
     <link rel="stylesheet" type="text/css" href="globals.css" />
+    <script src="background.js" defer></script>
   </head>
-  <body style="margin: 0">
-    <input type="hidden" id="anPageName" name="page" value="index" />
-    <div class="index screen">
-      <div class="header header-2">
-        <div class="frame-1">
-          <div class="header-1 header-2">
-            <div class="logo">
-              <img
-                class="logo-1"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                anima-src="https://cdn.animaapp.com/projects/6512e9693906ea530ab4adce/releases/6516b4b15a2f0035c9312de1/img/logo-1@2x.png"
-                alt="logo 1"
-              />
-              <div class="lakes-corp-button valign-text-middle">LakesCorp</div>
-            </div>
-            <div class="frame-2">
-              <a href="https://twitter.com/LakesCorp" target="_blank">
-                <div class="news-button">
-                  <img
-                    class="xcorp-svg"
-                    src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                    anima-src="https://cdn.animaapp.com/projects/6512e9693906ea530ab4adce/releases/6516b4b15a2f0035c9312de1/img/xcorp---svg@2x.png"
-                    alt="Xcorp - svg"
-                  />
-                  <div class="news valign-text-bottom montserrat-normal-celeste-24px">News</div>
-                </div></a
-              ><a href="https://play.google.com/store/apps/dev?id=7112554237907399984" target="_blank">
-                <div class="apps-button">
-                  <img
-                    class="group-svg"
-                    src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                    anima-src="https://cdn.animaapp.com/projects/6512e9693906ea530ab4adce/releases/6516b4b15a2f0035c9312de1/img/group---svg@2x.png"
-                    alt="Group - svg"
-                  />
-                  <div class="apps valign-text-bottom montserrat-normal-celeste-24px">Apps</div>
-                </div></a
-              ><a href="https://lakescorp.itch.io/" target="_blank">
-                <div class="games-button">
-                  <img
-                    class="vector-svg"
-                    src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                    anima-src="https://cdn.animaapp.com/projects/6512e9693906ea530ab4adce/releases/6516b4b15a2f0035c9312de1/img/vector---svg@2x.png"
-                    alt="Vector - svg"
-                  />
-                  <div class="games valign-text-bottom montserrat-normal-celeste-24px">Games</div>
-                </div></a
-              ><a href="https://linktr.ee/lakescorp" target="_blank">
-                <div class="profiles-button">
-                  <img
-                    class="profile-svg"
-                    src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                    anima-src="https://cdn.animaapp.com/projects/6512e9693906ea530ab4adce/releases/6516b4b15a2f0035c9312de1/img/profile---svg@2x.png"
-                    alt="Profile - svg"
-                  />
-                  <div class="profiles valign-text-bottom montserrat-normal-celeste-24px">Profiles</div>
-                </div></a
-              >
-            </div>
-          </div>
-          <div class="heather-shadow"></div>
-        </div>
-        <h1 class="title valign-text-middle">LakesCorp</h1>
+  <body>
+    <!-- Header / Navigation -->
+    <header class="header">
+      <div class="container header-container">
+        <a href="#" class="logo" id="nav-logo">
+          <img class="logo-img" src="img/logo.png" alt="LagosProject Logo" />
+          <span class="logo-text">LagosProject</span>
+        </a>
+        <nav class="nav-links">
+          <a href="https://twitter.com/LagosProject" target="_blank" class="nav-link" id="nav-news">
+            <svg viewBox="0 0 24 24">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+            <span>News</span>
+          </a>
+          <a href="https://play.google.com/store/apps/dev?id=7112554237907399984" target="_blank" class="nav-link" id="nav-apps">
+            <svg viewBox="0 0 24 24">
+              <path d="M3.609 1.814L13.792 12 3.61 22.186a1.983 1.983 0 0 1-.36-1.168V2.981c0-.442.13-.843.359-1.167zm11.282 9.087l2.871-1.657L4.99 1.343a2.022 2.022 0 0 0-1.021-.035l10.922 9.593zM3.969 22.693a2.008 2.008 0 0 0 1.021-.035l12.772-7.901-2.871-1.657-10.922 9.593zm14.341-9.083l3.666-2.115a2.003 2.003 0 0 0 0-3.47l-3.666-2.116-3.119 3.3 3.119 3.4z"/>
+            </svg>
+            <span>Apps</span>
+          </a>
+          <a href="https://lagosproject.itch.io/" target="_blank" class="nav-link" id="nav-games">
+            <svg viewBox="0 0 24 24">
+              <path d="M21 6H3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-10 7H8v3H6v-3H3v-2h3V8h2v3h3v2zm4.5 3c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm3-3c-.83 0-1.5-.67-1.5-1.5S17.67 10 18.5 10s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/>
+            </svg>
+            <span>Games</span>
+          </a>
+          <a href="https://www.linkedin.com/in/pabloferlagos" target="_blank" class="nav-link" id="nav-linkedin">
+            <svg viewBox="0 0 24 24">
+              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+            </svg>
+            <span>LinkedIn</span>
+          </a>
+          <a href="./links/" class="nav-link" id="nav-profiles">
+            <svg viewBox="0 0 24 24">
+              <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/>
+            </svg>
+            <span>Links</span>
+          </a>
+        </nav>
       </div>
-      <div class="ventana-total">
-        <div class="ventan">
-          <img
-            class="alto-total"
-            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-            anima-src="https://cdn.animaapp.com/projects/6512e9693906ea530ab4adce/releases/6516b4b15a2f0035c9312de1/img/altototal.png"
-            alt="AltoTotal"
-          />
-          <div class="bajo-total">
-            <img
-              class="bajoventana"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-              anima-src="https://cdn.animaapp.com/projects/6512e9693906ea530ab4adce/releases/6516b4b15a2f0035c9312de1/img/bajoventana.png"
-              alt="Bajoventana"
-            />
-            <p class="crafting-the-usefu valign-text-middle notosans-light-white-32px">
-              ✨ Crafting the Useful, the Unique, and the Unbelievable! ✨
+    </header>
+
+    <!-- Main Container -->
+    <main class="container">
+      
+      <!-- Hero Section -->
+      <section class="hero" id="hero-section">
+        <h1 class="hero-title">LagosProject</h1>
+        
+        <div class="terminal-window">
+          <div class="terminal-header">
+            <div class="terminal-dots">
+              <div class="terminal-dot red"></div>
+              <div class="terminal-dot yellow"></div>
+              <div class="terminal-dot green"></div>
+            </div>
+            <div class="terminal-title">status.sh</div>
+            <div style="width: 52px;"></div>
+          </div>
+          <div class="terminal-body">
+            <span class="terminal-prompt">lagosproject@dev:~$</span>
+            <span id="typewriter"></span>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="section" id="about-section">
+        <div class="section-grid">
+          <div class="section-info">
+            <h2 class="section-title">About Me & LagosProject</h2>
+            <p class="section-text">
+              Hi, I'm <strong>Pablo Fernández Lagos</strong>. I am a Computer Engineer specialized in Artificial Intelligence, currently studying Bioinformatics and Data Science in Personalized Precision Medicine at the Instituto de Salud Carlos III.
+            </p>
+            <p class="section-text">
+              <strong>LagosProject</strong> is my digital canvas where I fuse my expertise in AI and software development with the healthcare sector, creating open-source bioinformatics tools, apps, games, and 3D digital art.
             </p>
           </div>
-        </div>
-      </div>
-      <div class="about-me">
-        <div class="frame-container">
-          <div class="frame-3">
-            <div class="frame-4">
-              <div class="frame-5">
-                <div class="what-is-lakes-corp valign-text-middle montserrat-bold-white-40px">What is LakesCorp?</div>
-              </div>
-              <div class="frame-6">
-                <p class="lakescorp-is-my-pers valign-text-middle notosans-light-white-32px">
-                  Lakescorp is my personal project in which I aspire to fuse my passion for technology and my
-                  willingness to offer different services through apps and games.I hope they are of your interest.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="frame-7">
-            <div class="frame-8">
-              <img
-                class="thinking_face_3d-1"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                anima-src="https://cdn.animaapp.com/projects/6512e9693906ea530ab4adce/releases/6516b4b15a2f0035c9312de1/img/thinking-face-3d-1@2x.png"
-                alt="thinking_face_3d 1"
-              />
+          <div class="card-wrapper">
+            <div class="glass-card">
+              <img class="thinking-face-img" src="img/thinking-face.png" alt="Thinking Face 3D" />
             </div>
           </div>
         </div>
-      </div>
-      <div class="vscode vscode-2">
-        <div class="vscode-1 vscode-2">
-          <p class="if-user-tech-ent">
-            <span class="consolas-regular-normal-azure-radiance-13px">if</span
-            ><span class="consolas-regular-normal-white-13px"> user == </span
-            ><span class="consolas-regular-normal-green-13px">&#39;Tech Enthusiast&#39;</span
-            ><span class="consolas-regular-normal-white-13px">: <br />&nbsp;&nbsp;&nbsp;&nbsp;</span
-            ><span class="span-1">print</span><span class="consolas-regular-normal-white-13px">(</span
-            ><span class="consolas-regular-normal-green-13px">&#34;</span
-            ><span class="consolas-regular-normal-white-13px">📂 </span
-            ><span class="consolas-regular-normal-green-13px">GitHub Codebase: Dive into Our Projects!&#34;</span
-            ><span class="consolas-regular-normal-white-13px">) <br /><br /></span
-            ><span class="consolas-regular-normal-azure-radiance-13px">class</span
-            ><span class="consolas-regular-normal-white-13px">&nbsp;</span
-            ><span class="consolas-regular-normal-red-13px">GitHubProjects</span
-            ><span class="consolas-regular-normal-white-13px">: <br />&nbsp;&nbsp;&nbsp;&nbsp;</span
-            ><span class="consolas-regular-normal-azure-radiance-13px">def</span
-            ><span class="consolas-regular-normal-white-13px">&nbsp;</span
-            ><span class="consolas-regular-normal-red-13px">__init__</span
-            ><span class="consolas-regular-normal-white-13px"
-              >(self): <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.projects = {
-              <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
-            ><span class="consolas-regular-normal-green-13px">&#39;SupportBot&#39;</span
-            ><span class="consolas-regular-normal-white-13px">: </span
-            ><span class="consolas-regular-normal-green-13px">&#39;</span
-            ><span class="consolas-regular-normal-white-13px">🤖 </span
-            ><span class="consolas-regular-normal-green-13px">A ticket support bot crafted in Python.&#39;</span
-            ><span class="consolas-regular-normal-white-13px"
-              >, <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
-            ><span class="consolas-regular-normal-green-13px">&#39;KaraokeApp&#39;</span
-            ><span class="consolas-regular-normal-white-13px">: </span
-            ><span class="consolas-regular-normal-green-13px">&#39;</span
-            ><span class="consolas-regular-normal-white-13px">🎤 </span
-            ><span class="consolas-regular-normal-green-13px"
-              >Karaoke magic where singers hear the original track. Again, Python-powered!&#39;</span
-            ><span class="consolas-regular-normal-white-13px"
-              >, <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span
-            ><span class="consolas-regular-normal-green-13px"> &#39;ImageLabeler&#39;</span
-            ><span class="consolas-regular-normal-white-13px">: </span
-            ><span class="consolas-regular-normal-green-13px">&#39;</span
-            ><span class="consolas-regular-normal-white-13px">🖼️ </span
-            ><span class="consolas-regular-normal-green-13px">AI-driven image labeling in real-time.&#39;</span
-            ><span class="consolas-regular-normal-white-13px"
-              >, <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
-            ><span class="consolas-regular-normal-green-13px">&#39;EscapeRoomPassword&#39;</span
-            ><span class="consolas-regular-normal-white-13px">: </span
-            ><span class="consolas-regular-normal-green-13px">&#39;</span
-            ><span class="consolas-regular-normal-white-13px">🔐 </span
-            ><span class="consolas-regular-normal-green-13px"
-              >Unity-based password introduction for an escape room challenge.</span
-            ><span class="consolas-regular-normal-white-13px"
-              >&#39; <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} <br />&nbsp;&nbsp;&nbsp;&nbsp;
-              <br />&nbsp;&nbsp;&nbsp;&nbsp;</span
-            ><span class="consolas-regular-normal-azure-radiance-13px">def</span
-            ><span class="consolas-regular-normal-white-13px">&nbsp;</span
-            ><span class="consolas-regular-normal-red-13px">showcase</span
-            ><span class="consolas-regular-normal-white-13px"
-              >(self): <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
-            ><span class="consolas-regular-normal-azure-radiance-13px">for</span
-            ><span class="consolas-regular-normal-white-13px"> name, desc </span
-            ><span class="consolas-regular-normal-azure-radiance-13px">in</span
-            ><span class="consolas-regular-normal-white-13px">
-              self.projects.items():
-              <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
-            ><span class="span-1">print</span><span class="consolas-regular-normal-white-13px">(</span
-            ><span class="consolas-regular-normal-green-13px">f&#34;{name}: {desc}&#34;</span
-            ><span class="consolas-regular-normal-white-13px"
-              >) <br />
-              <br /># Let&#39;s see what&#39;s inside: <br />repo = GitHubProjects() <br />repo.showcase()</span
-            >
-          </p>
-        </div>
-        <div class="frame-9">
-          <div class="frame-10">
-            <div class="frame-11">
-              <p class="the-power-of-code valign-text-middle montserrat-bold-white-40px">
-                🧑‍💻&nbsp;&nbsp;The power of code
-              </p>
-            </div>
-            <div class="frame-12">
-              <p class="feel-the-magic-of valign-text-middle">
-                <span
-                  ><span class="notosans-light-white-32px"
-                    >Feel the magic 🪄 of code by diving into our innovative projects. My </span
-                  ><a href="https://github.com/lakescorp/" target="_blank"
-                    ><span class="span-2 notosans-light-white-32px">GitHub</span></a
-                  ><span class="notosans-light-white-32px">
-                    is a canvas, and Python (plus a sprinkle of Unity) is my paint! 🎨</span
-                  >
-                </span>
-              </p>
-            </div>
-          </div>
-          <div class="frame-13">
-            <a href="https://github.com/lakescorp/" target="_blank">
-              <div class="github-button">
-                <img
-                  class="vector"
-                  src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                  anima-src="https://cdn.animaapp.com/projects/6512e9693906ea530ab4adce/releases/6516b4b15a2f0035c9312de1/img/vector@2x.png"
-                  alt="Vector"
-                />
-                <div class="go-now valign-text-middle notosans-normal-white-36px">Go now!</div>
-              </div></a
-            >
-          </div>
-        </div>
-      </div>
-      <div class="gamepanel">
-        <div class="frame-14"></div>
-        <div class="frame-15">
-          <div class="frame-16">
-            <p class="game-development-journey valign-text-middle montserrat-bold-white-40px">
-              🎮 Game Development Journey 🕹️
-            </p>
-          </div>
-          <div class="frame-17">
-            <p class="ever-since-i-can-rem valign-text-middle notosans-light-white-32px">
-              Ever since I can remember, crafting games has been a passion of mine. 🎲 While my portfolio might not be
-              vast at the moment, 🚀 I&#39;m fervently working towards adding more innovative titles in the future. 💡
-              Join me on this exciting quest! 🛠️🌟
-            </p>
-          </div>
-          <div class="frame-18">
-            <a href="https://lakescorp.itch.io/" target="_blank">
-              <div class="itchio-button">
-                <img
-                  class="vector-1"
-                  src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                  anima-src="https://cdn.animaapp.com/projects/6512e9693906ea530ab4adce/releases/6516b9435a2f0035c9312df4/img/vector-1@2x.png"
-                  alt="Vector"
-                />
-                <div class="go-now-1 valign-text-middle go-now-3 notosans-normal-white-36px">Go now!</div>
-              </div></a
-            >
-          </div>
-        </div>
-        <div class="frame-19"></div>
-      </div>
-      <div class="apps-panel">
-        <div class="apps-1">
-          <div class="frame-20">
-            <div class="frame-21">
-              <div class="frame-22">
-                <div class="frame-23">
-                  <div class="frame-24">
-                    <p class="apps-from-tools-to-thrills valign-text-middle montserrat-bold-white-40px">
-                      🚀&nbsp;&nbsp;Apps: From Tools to Thrills!
-                    </p>
-                  </div>
-                  <div class="frame-25">
-                    <p class="dive-into-our-dive valign-text-middle">
-                      <span
-                        ><span class="notosans-light-white-32px"
-                          >🌟 Dive into our diverse world of app development! I’am passionate about crafting everything
-                          from handy utilities 🔧️ to engaging games 🎲. Whether you&#39;re in need of a quirky
-                          tambourine app or a dedicated TTS for Twitch, we&#39;ve got it all! Explore and see what fits
-                          your fancy. 🔍Don&#39;t forget to check us out on the</span
-                        ><span class="notosans-medium-white-32px">&nbsp;</span
-                        ><a href="https://play.google.com/store/apps/dev?id=7112554237907399984" target="_blank"
-                          ><span class="span-2 notosans-medium-white-32px">Play Store</span></a
-                        ><span class="notosans-medium-white-32px">!</span>
-                      </span>
-                    </p>
-                  </div>
+      </section>
+
+      <!-- GitHub Code Section -->
+      <section class="section" id="code-section">
+        <div class="section-grid">
+          <div class="card-wrapper">
+            <div class="code-editor">
+              <div class="editor-header">
+                <div class="editor-controls">
+                  <div class="editor-control"></div>
+                  <div class="editor-control"></div>
+                  <div class="editor-control"></div>
                 </div>
+                <div class="terminal-title">projects.py</div>
+                <div style="width: 42px;"></div>
               </div>
-              <div class="frame-26">
-                <div class="frame-27">
-                  <a href="https://play.google.com/store/apps/dev?id=7112554237907399984" target="_blank">
-                    <div class="play-store-button">
-                      <img
-                        class="vector-2"
-                        src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                        anima-src="https://cdn.animaapp.com/projects/6512e9693906ea530ab4adce/releases/6516b4b15a2f0035c9312de1/img/vector-2@2x.png"
-                        alt="Vector"
-                      />
-                      <div class="go-now-2 valign-text-middle go-now-3 notosans-normal-white-36px">Go now!</div>
-                    </div></a
-                  >
+              <div class="editor-body">
+                <div class="line-numbers">
+                  1<br/>2<br/>3<br/>4<br/>5<br/>6<br/>7<br/>8<br/>9<br/>10<br/>11<br/>12<br/>13<br/>14<br/>15
+                </div>
+                <div class="code-content">
+                  <span class="kw-if">if</span> user == <span class="str">'Tech Enthusiast'</span>:<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;<span class="builtin">print</span>(<span class="str">"📂 GitHub Codebase: Dive into Our Projects!"</span>)<br/><br/>
+                  <span class="kw-class">class</span> <span class="class-name">GitHubProjects</span>:<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;<span class="kw-def">def</span> <span class="func-name">__init__</span>(<span class="var-self">self</span>):<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="var-self">self</span>.projects = {<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="str">'PSAnalyzer'</span>: <span class="str">'🧬 Sanger sequence analyzer & clinical reporting.'</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="str">'BioEngine'</span>: <span class="str">'⚡ Backend API for heavy biology computation.'</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="str">'DNAEmbeddings'</span>: <span class="str">'📊 DNA foundation model embeddings UMAP.'</span>,<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="str">'ImageLabelIA'</span>: <span class="str">'📸 AI object detector using ViT & DETR.'</span><br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;<span class="kw-def">def</span> <span class="func-name">showcase</span>(<span class="var-self">self</span>):<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="kw-for">for</span> name, desc <span class="kw-in">in</span> <span class="var-self">self</span>.projects.items():<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="builtin">print</span>(<span class="str">f"{name}: {desc}"</span>)<br/><br/>
+                  repo = GitHubProjects()<br/>
+                  repo.showcase()
                 </div>
               </div>
             </div>
           </div>
-          <div class="frame-28">
-            <div class="frame-29">
-              <img
-                class="x642shots_so-1"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                anima-src="https://cdn.animaapp.com/projects/6512e9693906ea530ab4adce/releases/6516b4b15a2f0035c9312de1/img/642shots-so-1.png"
-                alt="642shots_so 1"
-              />
-            </div>
+          <div class="section-info">
+            <h2 class="section-title">🧑‍💻 Bio & AI Development</h2>
+            <p class="section-text">
+              Harnessing the power of code to solve complex biological and data-driven challenges. My <a href="https://github.com/lagosproject/" target="_blank">GitHub</a> showcases open-source pipelines, web-based visualizers, and neural networks, primarily powered by Python, Angular, Tauri, and TypeScript.
+            </p>
+            <a href="https://github.com/lagosproject/" target="_blank" class="btn btn-blue" id="github-btn">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+              </svg>
+              <span>Go now!</span>
+            </a>
           </div>
         </div>
-      </div>
-      <div class="modelos-3d">
-        <div class="frame-30">
-          <div class="overlap-group">
-            <img
-              class="captura-de-pantalla-2023-09-26-232655-1"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-              anima-src="https://cdn.animaapp.com/projects/6512e9693906ea530ab4adce/releases/6516b7ff059508e446b20cbd/img/captura-de-pantalla-2023-09-26-232655-1@2x.png"
-              alt="Captura de pantalla 2023-09-26 232655 1"
-            />
-            <img
-              class="polygon-1"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-              anima-src="https://cdn.animaapp.com/projects/6512e9693906ea530ab4adce/releases/6516b4b15a2f0035c9312de1/img/polygon-1.png"
-              alt="Polygon 1"
-            />
+      </section>
+
+      <!-- Game Dev Section -->
+      <section class="section" id="games-section">
+        <div class="section-grid">
+          <div class="section-info">
+            <h2 class="section-title">🎮 Interactive Games & Simulations</h2>
+            <p class="section-text">
+              Beyond utility and bioinformatics, crafting immersive games and interactive systems has always been a key driver of my creativity. Exploring novel mechanics, gameplay design, and spatial UI/UX is part of my constant quest to build engaging digital experiences. Join me on <a href="https://lagosproject.itch.io/" target="_blank">Itch.io</a> to play!
+            </p>
+            <a href="https://lagosproject.itch.io/" target="_blank" class="btn btn-red" id="itchio-btn">
+              <svg viewBox="0 0 24 24">
+                <path d="M21 6H3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-10 7H8v3H6v-3H3v-2h3V8h2v3h3v2zm4.5 3c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm3-3c-.83 0-1.5-.67-1.5-1.5S17.67 10 18.5 10s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/>
+              </svg>
+              <span>Go now!</span>
+            </a>
           </div>
-        </div>
-        <div class="frame-31">
-          <div class="frame-32">
-            <div class="frame">
-              <p class="beyond-coding-my-artistic-ventures valign-text-middle montserrat-bold-white-40px">
-                🎨 Beyond Coding: My Artistic Ventures
-              </p>
-            </div>
-            <div class="frame">
-              <p class="while-coding-is-my valign-text-middle notosans-light-white-32px">
-                While 💻 coding is my main passion, I&#39;m also captivated by the world of digital art. Dive into my
-                collection of 🎲 voxel, 🗿 high poly, and 📏 low poly 3D models. Unveiling a different side of
-                creativity, where programming meets art! 🖌️🌌
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="frame-33"></div>
-      </div>
-      <div class="social-media">
-        <p class="follow-me-on-social-media valign-text-middle montserrat-bold-white-40px">Follow me on Social Media</p>
-        <a href="https://linktr.ee/lakescorp" target="_blank">
-          <div class="play-store-button-1">
-            <img
-              class="vector-3"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-              anima-src="https://cdn.animaapp.com/projects/6512e9693906ea530ab4adce/releases/6516b4b15a2f0035c9312de1/img/vector-3@2x.png"
-              alt="Vector"
-            />
-            <div class="linktree valign-text-middle notosans-normal-white-36px">Linktree</div>
-          </div></a
-        >
-      </div>
-    </div>
-    <div class="home-phone screen">
-      <header class="header-2 header">
-        <div class="frame-34">
-          <img
-            class="header"
-            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-            anima-src="https://cdn.animaapp.com/projects/6512e9693906ea530ab4adce/releases/65185053fbb7a3a4593be509/img/header@2x.png"
-            alt="Header"
-          />
-          <div class="heather-shadow-1"></div>
-        </div>
-        <h1 class="title-1 valign-text-middle montserrat-bold-white-40px">LakesCorp</h1>
-      </header>
-      <div class="ventana-total-1">
-        <img
-          class="alto-total-1"
-          src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-          anima-src="https://cdn.animaapp.com/projects/6512e9693906ea530ab4adce/releases/65185053fbb7a3a4593be509/img/altototal-1@2x.png"
-          alt="AltoTotal"
-        />
-        <div class="bajo-total-1">
-          <img
-            class="bajoventana-1"
-            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-            anima-src="https://cdn.animaapp.com/projects/6512e9693906ea530ab4adce/releases/65185053fbb7a3a4593be509/img/bajoventana-1@2x.png"
-            alt="Bajoventana"
-          />
-          <p class="crafting-the-usefu-1 valign-text-middle">
-            ✨ Crafting the Useful, the Unique, and the Unbelievable! ✨
-          </p>
-        </div>
-      </div>
-      <div class="about-me-1">
-        <div class="overlap-group-1">
-          <div class="frame-36"></div>
-          <div class="frame-37">
-            <div class="frame-38">
-              <div class="frame-34">
-                <div class="what-is-lakes-corp-1 valign-text-middle montserrat-bold-white-20px">What is LakesCorp?</div>
-              </div>
-              <div class="frame-39">
-                <p class="lakescorp-is-my-pers-1 valign-text-middle">
-                  Lakescorp is my personal project in which I aspire to fuse my passion for technology and my
-                  willingness to offer different services through apps and games.I hope they are of your interest.
-                </p>
+          <div class="card-wrapper">
+            <div class="glass-card" style="padding: 12px; background: linear-gradient(135deg, rgba(255, 51, 102, 0.05), rgba(8, 9, 12, 0.95)); border-color: rgba(255, 51, 102, 0.25);">
+              <div style="font-family: var(--font-heading); color: var(--accent-red); font-size: 5rem; text-shadow: 0 0 30px rgba(255, 51, 102, 0.3); font-weight: 800;">
+                PLAY
               </div>
             </div>
           </div>
-          <img
-            class="thinking_face_3d-1-1"
-            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-            anima-src="https://cdn.animaapp.com/projects/6512e9693906ea530ab4adce/releases/6516b4b15a2f0035c9312de1/img/thinking-face-3d-1@2x.png"
-            alt="thinking_face_3d 1"
-          />
         </div>
-      </div>
-      <div class="vscode-2">
-        <div class="vscode-1-1">
-          <p class="if-user-tech-ent-1">
-            <span class="consolas-regular-normal-azure-radiance-5-5px">if</span
-            ><span class="consolas-regular-normal-white-5-5px"> user == </span
-            ><span class="consolas-regular-normal-green-5-5px">&#39;Tech Enthusiast&#39;</span
-            ><span class="consolas-regular-normal-white-5-5px">: <br />&nbsp;&nbsp;&nbsp;&nbsp;</span
-            ><span class="span-4">print</span><span class="consolas-regular-normal-white-5-5px">(</span
-            ><span class="consolas-regular-normal-green-5-5px">&#34;</span
-            ><span class="consolas-regular-normal-white-5-5px">📂 </span
-            ><span class="consolas-regular-normal-green-5-5px">GitHub Codebase: Dive into Our Projects!&#34;</span
-            ><span class="consolas-regular-normal-white-5-5px">) <br /><br /></span
-            ><span class="consolas-regular-normal-azure-radiance-5-5px">class</span
-            ><span class="consolas-regular-normal-white-5-5px">&nbsp;</span
-            ><span class="consolas-regular-normal-red-5-5px">GitHubProjects</span
-            ><span class="consolas-regular-normal-white-5-5px">: <br />&nbsp;&nbsp;&nbsp;&nbsp;</span
-            ><span class="consolas-regular-normal-azure-radiance-5-5px">def</span
-            ><span class="consolas-regular-normal-white-5-5px">&nbsp;</span
-            ><span class="consolas-regular-normal-red-5-5px">__init__</span
-            ><span class="consolas-regular-normal-white-5-5px"
-              >(self): <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.projects = {
-              <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
-            ><span class="consolas-regular-normal-green-5-5px">&#39;SupportBot&#39;</span
-            ><span class="consolas-regular-normal-white-5-5px">: </span
-            ><span class="consolas-regular-normal-green-5-5px">&#39;</span
-            ><span class="consolas-regular-normal-white-5-5px">🤖 </span
-            ><span class="consolas-regular-normal-green-5-5px">A ticket support bot crafted in Python.&#39;</span
-            ><span class="consolas-regular-normal-white-5-5px"
-              >, <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
-            ><span class="consolas-regular-normal-green-5-5px">&#39;KaraokeApp&#39;</span
-            ><span class="consolas-regular-normal-white-5-5px">: </span
-            ><span class="consolas-regular-normal-green-5-5px">&#39;</span
-            ><span class="consolas-regular-normal-white-5-5px">🎤 </span
-            ><span class="consolas-regular-normal-green-5-5px"
-              >Karaoke magic where singers hear the original track. Again, Python-powered!&#39;</span
-            ><span class="consolas-regular-normal-white-5-5px"
-              >, <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span
-            ><span class="consolas-regular-normal-green-5-5px"> &#39;ImageLabeler&#39;</span
-            ><span class="consolas-regular-normal-white-5-5px">: </span
-            ><span class="consolas-regular-normal-green-5-5px">&#39;</span
-            ><span class="consolas-regular-normal-white-5-5px">🖼️ </span
-            ><span class="consolas-regular-normal-green-5-5px">AI-driven image labeling in real-time.&#39;</span
-            ><span class="consolas-regular-normal-white-5-5px"
-              >, <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
-            ><span class="consolas-regular-normal-green-5-5px">&#39;EscapeRoomPassword&#39;</span
-            ><span class="consolas-regular-normal-white-5-5px">: </span
-            ><span class="consolas-regular-normal-green-5-5px">&#39;</span
-            ><span class="consolas-regular-normal-white-5-5px">🔐 </span
-            ><span class="consolas-regular-normal-green-5-5px"
-              >Unity-based password introduction for an escape room challenge.</span
-            ><span class="consolas-regular-normal-white-5-5px"
-              >&#39; <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} <br />&nbsp;&nbsp;&nbsp;&nbsp;
-              <br />&nbsp;&nbsp;&nbsp;&nbsp;</span
-            ><span class="consolas-regular-normal-azure-radiance-5-5px">def</span
-            ><span class="consolas-regular-normal-white-5-5px">&nbsp;</span
-            ><span class="consolas-regular-normal-red-5-5px">showcase</span
-            ><span class="consolas-regular-normal-white-5-5px"
-              >(self): <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
-            ><span class="consolas-regular-normal-azure-radiance-5-5px">for</span
-            ><span class="consolas-regular-normal-white-5-5px"> name, desc </span
-            ><span class="consolas-regular-normal-azure-radiance-5-5px">in</span
-            ><span class="consolas-regular-normal-white-5-5px">
-              self.projects.items():
-              <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
-            ><span class="span-4">print</span><span class="consolas-regular-normal-white-5-5px">(</span
-            ><span class="consolas-regular-normal-green-5-5px">f&#34;{name}: {desc}&#34;</span
-            ><span class="consolas-regular-normal-white-5-5px"
-              >) <br />
-              <br /># Let&#39;s see what&#39;s inside: <br />repo = GitHubProjects() <br />repo.showcase()</span
-            >
-          </p>
-        </div>
-        <div class="frame-40">
-          <div class="frame-41">
-            <div class="frame-34">
-              <p class="the-power-of-code-1 valign-text-middle montserrat-bold-white-20px">
-                🧑‍💻&nbsp;&nbsp;The power of code
-              </p>
-            </div>
-            <div class="frame-42">
-              <p class="feel-the-magic-of-1 valign-text-middle">
-                <span
-                  ><span class="notosans-light-white-16px"
-                    >Feel the magic 🪄 of code by diving into our innovative projects. My </span
-                  ><a href="https://github.com/lakescorp/" target="_blank"
-                    ><span class="span1 notosans-light-white-16px">GitHub</span></a
-                  ><span class="notosans-light-white-16px">
-                    is a canvas, and Python (plus a sprinkle of Unity) is my paint! 🎨</span
-                  >
-                </span>
-              </p>
+      </section>
+
+      <!-- Apps Section -->
+      <section class="section" id="apps-section">
+        <div class="section-grid">
+          <div class="card-wrapper">
+            <div class="app-mockup">
+              <img src="img/apps-showcase.png" alt="Apps Showcase Mockup" />
             </div>
           </div>
-          <div class="frame-43">
-            <a href="https://github.com/lakescorp/" target="_blank">
-              <div class="github-button-1">
-                <img
-                  class="vector-4"
-                  src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                  anima-src="https://cdn.animaapp.com/projects/6512e9693906ea530ab4adce/releases/65181ecefbb7a3a4593be4ea/img/vector-4@2x.png"
-                  alt="Vector"
-                />
-                <div class="go-now-3 valign-text-middle go-now notosans-normal-white-24px">Go now!</div>
-              </div></a
-            >
+          <div class="section-info">
+            <h2 class="section-title">📱 Creative Apps & Utilities</h2>
+            <p class="section-text">
+              From robust image classification systems like <strong>ImageLabelIA</strong> utilizing Vision Transformers (ViT) and DETR, to versatile Flutter applications like <strong>Dictation</strong> for voice-to-text transcription. I design and build utility tools that focus on utility and seamless user experiences. Explore them on the <a href="https://play.google.com/store/apps/dev?id=7112554237907399984" target="_blank">Play Store</a>!
+            </p>
+            <a href="https://play.google.com/store/apps/dev?id=7112554237907399984" target="_blank" class="btn btn-green" id="playstore-btn">
+              <svg viewBox="0 0 24 24">
+                <path d="M3.609 1.814L13.792 12 3.61 22.186a1.983 1.983 0 0 1-.36-1.168V2.981c0-.442.13-.843.359-1.167zm11.282 9.087l2.871-1.657L4.99 1.343a2.022 2.022 0 0 0-1.021-.035l10.922 9.593zM3.969 22.693a2.008 2.008 0 0 0 1.021-.035l12.772-7.901-2.871-1.657-10.922 9.593zm14.341-9.083l3.666-2.115a2.003 2.003 0 0 0 0-3.47l-3.666-2.116-3.119 3.3 3.119 3.4z"/>
+              </svg>
+              <span>Go now!</span>
+            </a>
           </div>
         </div>
-      </div>
-      <div class="gamepanel-1">
-        <div class="frame-44"></div>
-        <div class="frame-45">
-          <div class="frame-46">
-            <p class="game-development-journey-1 valign-text-middle montserrat-bold-white-20px">
-              🎮 Game Development Journey 🕹️
+      </section>
+
+      <!-- Art Ventures Section -->
+      <section class="section" id="art-section">
+        <div class="section-grid">
+          <div class="section-info">
+            <h2 class="section-title">🎨 3D Modeling & Digital Art</h2>
+            <p class="section-text">
+              Where programming meets aesthetics. I create voxel art, low-poly assets, and high-fidelity 3D models. You can explore and download my 3D assets on <a href="https://sketchfab.com/lakescorp" target="_blank">Sketchfab</a>, <a href="https://www.cgtrader.com/lakescorp" target="_blank">CGTrader</a>, and <a href="https://poly.pizza/u/lakescorp" target="_blank">Poly Pizza</a>, or find digital photography on <a href="https://pixabay.com/es/users/lakescorp-9947812/" target="_blank">Pixabay</a>.
             </p>
           </div>
-          <div class="frame-34">
-            <p class="ever-since-i-can-rem-1 valign-text-middle notosans-light-white-16px">
-              Ever since I can remember, crafting games has been a passion of mine. 🎲 While my portfolio might not be
-              vast at the moment, 🚀 I&#39;m fervently working towards adding more innovative titles in the future. 💡
-              Join me on this exciting quest! 🛠️🌟
-            </p>
-          </div>
-          <div class="frame-47">
-            <a href="https://lakescorp.itch.io/" target="_blank">
-              <div class="itchio-button-1">
-                <img
-                  class="vector-5"
-                  src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                  anima-src="https://cdn.animaapp.com/projects/6512e9693906ea530ab4adce/releases/65185053fbb7a3a4593be509/img/vector-5@2x.png"
-                  alt="Vector"
-                />
-                <div class="go-now-4 valign-text-middle go-now notosans-normal-white-24px">Go now!</div>
-              </div></a
-            >
-          </div>
-        </div>
-        <div class="frame-48"></div>
-      </div>
-      <div class="apps-panel-1">
-        <div class="apps-2">
-          <div class="frame-49">
-            <div class="frame-50">
-              <div class="frame-51">
-                <div class="frame-52">
-                  <div class="frame-53">
-                    <p class="apps-from-tools-to-thrills-1 valign-text-middle montserrat-bold-white-20px">
-                      🚀&nbsp;&nbsp;Apps: From Tools to Thrills!
-                    </p>
-                  </div>
-                  <div class="frame-54">
-                    <p class="dive-into-our-dive-1 valign-text-middle">
-                      🌟 Dive into our diverse world of app development! I’am passionate about crafting everything from
-                      handy utilities 🔧️ to engaging games 🎲. Whether you&#39;re in need of a quirky tambourine app or
-                      a dedicated TTS for Twitch, we&#39;ve got it all! Explore and see what fits your fancy. 🔍
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <a href="https://play.google.com/store/apps/dev?id=7112554237907399984" target="_blank">
-                <div class="play-store-button-2">
-                  <img
-                    class="vector-6"
-                    src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                    anima-src="https://cdn.animaapp.com/projects/6512e9693906ea530ab4adce/releases/65183c3a1cf0d85fdd17dd2f/img/vector-7@2x.png"
-                    alt="Vector"
-                  />
-                  <div class="go-now-5 valign-text-middle go-now notosans-normal-white-24px">Go now!</div>
-                </div></a
-              >
-            </div>
-          </div>
-          <div class="frame-55">
-            <img
-              class="x642shots_so-1-1"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-              anima-src="https://cdn.animaapp.com/projects/6512e9693906ea530ab4adce/releases/6518577213532d4d0a487d0a/img/642shots-so-1-1@2x.png"
-              alt="642shots_so 1"
-            />
-          </div>
-        </div>
-      </div>
-      <div class="modelos-3d-1">
-        <div class="frame-56">
-          <div class="overlap-group-2">
-            <img
-              class="captura-de-pantalla-2023-09-26-232655-1-1"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-              anima-src="https://cdn.animaapp.com/projects/6512e9693906ea530ab4adce/releases/651853d77403c38b35ebae28/img/captura-de-pantalla-2023-09-26-232655-1-1@2x.png"
-              alt="Captura de pantalla 2023-09-26 232655 1"
-            />
-            <img
-              class="polygon-1-1"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-              anima-src="https://cdn.animaapp.com/projects/6512e9693906ea530ab4adce/releases/651853d77403c38b35ebae28/img/polygon-1-1@2x.png"
-              alt="Polygon 1"
-            />
-          </div>
-        </div>
-        <div class="frame-57">
-          <div class="frame-58">
-            <div class="frame-35">
-              <p class="beyond-coding-my-artistic-ventures-1 valign-text-middle montserrat-bold-white-20px">
-                🎨 Beyond Coding: My Artistic Ventures
-              </p>
-            </div>
-            <div class="frame-35">
-              <p class="while-coding-is-my-1 valign-text-middle notosans-light-white-16px">
-                While 💻 coding is my main passion, I&#39;m also captivated by the world of digital art. Dive into my
-                collection of 🎲 voxel, 🗿 high poly, and 📏 low poly 3D models. Unveiling a different side of
-                creativity, where programming meets art! 🖌️🌌
-              </p>
+          <div class="card-wrapper">
+            <div class="art-mockup">
+              <img src="img/artistic-showcase.png" alt="3D Art Collection Showcase" />
             </div>
           </div>
         </div>
-        <div class="frame-59"></div>
-      </div>
-      <div class="social-media-1">
-        <p class="follow-me-on-social-media-1 valign-text-middle">Follow me on Social Media</p>
-        <a href="https://linktr.ee/lakescorp" target="_blank">
-          <div class="play-store-button-3">
-            <img
-              class="vector-7"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-              anima-src="https://cdn.animaapp.com/projects/6512e9693906ea530ab4adce/releases/65183db189360d82e0195386/img/vector-8@2x.png"
-              alt="Vector"
-            />
-            <div class="linktree-1 valign-text-middle notosans-normal-white-24px">Linktree</div>
-          </div></a
-        >
-      </div>
-    </div>
-    <div class="home-tablet screen">
-      <div class="header-4 header">
-        <div class="frame-61">
-          <div class="header-5 header">
-            <div class="logo-2">
-              <img
-                class="logo-1-1"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                anima-src="https://cdn.animaapp.com/projects/6512e9693906ea530ab4adce/releases/6516b4b15a2f0035c9312de1/img/logo-1@2x.png"
-                alt="logo 1"
-              />
-              <div class="lakes-corp-button-1 valign-text-middle">LakesCorp</div>
-            </div>
-            <div class="frame-62">
-              <div class="frame-1-1">
-                <a href="https://twitter.com/LakesCorp" target="_blank">
-                  <div class="news-button-1">
-                    <img
-                      class="xcorp-svg-1"
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                      anima-src="https://cdn.animaapp.com/projects/6512e9693906ea530ab4adce/releases/6518345801a560f117d99c87/img/xcorp---svg-1@2x.png"
-                      alt="Xcorp - svg"
-                    />
-                    <div class="news-1 valign-text-bottom montserrat-normal-celeste-20px">News</div>
-                  </div></a
-                ><a href="https://play.google.com/store/apps/dev?id=7112554237907399984" target="_blank">
-                  <div class="apps-button-1">
-                    <img
-                      class="vector-8"
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                      anima-src="https://cdn.animaapp.com/projects/6512e9693906ea530ab4adce/releases/6518345801a560f117d99c87/img/vector-4@2x.png"
-                      alt="Vector"
-                    />
-                    <div class="apps-3 valign-text-bottom montserrat-normal-celeste-20px">Apps</div>
-                  </div></a
-                >
-              </div>
-              <div class="frame-2-1">
-                <a href="https://lakescorp.itch.io/" target="_blank">
-                  <div class="games-button-1">
-                    <img
-                      class="vector-svg-1"
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                      anima-src="https://cdn.animaapp.com/projects/6512e9693906ea530ab4adce/releases/6516b4b15a2f0035c9312de1/img/vector---svg@2x.png"
-                      alt="Vector - svg"
-                    />
-                    <div class="games-1 valign-text-bottom montserrat-normal-celeste-20px">Games</div>
-                  </div></a
-                ><a href="https://linktr.ee/lakescorp" target="_blank">
-                  <div class="profiles-button-1">
-                    <img
-                      class="profile-svg-1"
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                      anima-src="https://cdn.animaapp.com/projects/6512e9693906ea530ab4adce/releases/6516b4b15a2f0035c9312de1/img/profile---svg@2x.png"
-                      alt="Profile - svg"
-                    />
-                    <div class="profiles-1 valign-text-bottom montserrat-normal-celeste-20px">Profiles</div>
-                  </div></a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="heather-shadow-2"></div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container" style="display: flex; flex-direction: column; align-items: center; gap: 2rem;">
+        <div>
+          <h2 class="footer-title">Follow me on Social Media</h2>
+          <a href="./links/" class="btn btn-yellow" id="linktree-btn" style="margin: 0 auto;">
+            <svg viewBox="0 0 24 24">
+              <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/>
+            </svg>
+            <span>My Links</span>
+          </a>
         </div>
-        <h1 class="title-2 valign-text-middle">LakesCorp</h1>
-      </div>
-      <div class="ventana-total-2">
-        <div class="ventan-1">
-          <img
-            class="alto-total-2"
-            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-            anima-src="https://cdn.animaapp.com/projects/6512e9693906ea530ab4adce/releases/65181f5b059508e446b20ef8/img/altototal-1.png"
-            alt="AltoTotal"
-          />
-          <div class="bajo-total-2">
-            <img
-              class="bajoventana-2"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-              anima-src="https://cdn.animaapp.com/projects/6512e9693906ea530ab4adce/releases/65181ecefbb7a3a4593be4ea/img/bajoventana-1.png"
-              alt="Bajoventana"
-            />
-            <p class="crafting-the-usefu-2 valign-text-middle">
-              ✨ Crafting the Useful, the Unique, and the Unbelievable! ✨
-            </p>
-          </div>
+        
+        <div class="footer-social-icons">
+          <a href="https://www.linkedin.com/in/pabloferlagos" target="_blank" class="social-icon-btn blue" title="LinkedIn Profile">
+            <svg viewBox="0 0 24 24">
+              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+            </svg>
+          </a>
+          <a href="https://github.com/lagosproject/" target="_blank" class="social-icon-btn blue" title="GitHub Profile">
+            <svg viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          </a>
+          <a href="https://play.google.com/store/apps/dev?id=7112554237907399984" target="_blank" class="social-icon-btn green" title="Google Play Store">
+            <svg viewBox="0 0 24 24"><path d="M3.609 1.814L13.792 12 3.61 22.186a1.983 1.983 0 0 1-.36-1.168V2.981c0-.442.13-.843.359-1.167zm11.282 9.087l2.871-1.657L4.99 1.343a2.022 2.022 0 0 0-1.021-.035l10.922 9.593zM3.969 22.693a2.008 2.008 0 0 0 1.021-.035l12.772-7.901-2.871-1.657-10.922 9.593zm14.341-9.083l3.666-2.115a2.003 2.003 0 0 0 0-3.47l-3.666-2.116-3.119 3.3 3.119 3.4z"/></svg>
+          </a>
+          <a href="https://lagosproject.itch.io/" target="_blank" class="social-icon-btn red" title="Itch.io Games">
+            <svg viewBox="0 0 24 24"><path d="M21 6H3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-10 7H8v3H6v-3H3v-2h3V8h2v3h3v2zm4.5 3c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm3-3c-.83 0-1.5-.67-1.5-1.5S17.67 10 18.5 10s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>
+          </a>
         </div>
+        
+        <p class="copyright">&copy; 2026 LagosProject. All rights reserved.</p>
       </div>
-      <div class="about-me-2">
-        <div class="overlap-group-3">
-          <div class="frame-63">
-            <div class="frame-64">
-              <div class="frame-65">
-                <div class="what-is-lakes-corp-2 valign-text-middle montserrat-bold-white-32px">What is LakesCorp?</div>
-              </div>
-              <div class="frame-66">
-                <p class="lakescorp-is-my-pers-2 valign-text-middle">
-                  Lakescorp is my personal project in which I aspire to fuse my passion for technology and my
-                  willingness to offer different services through apps and games.I hope they are of your interest.
-                </p>
-              </div>
-            </div>
-          </div>
-          <img
-            class="thinking_face_3d-1-2"
-            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-            anima-src="https://cdn.animaapp.com/projects/6512e9693906ea530ab4adce/releases/6516b4b15a2f0035c9312de1/img/thinking-face-3d-1@2x.png"
-            alt="thinking_face_3d 1"
-          />
-        </div>
-      </div>
-      <div class="vscode-3">
-        <div class="vscode-1-2">
-          <p class="if-user-tech-ent-2">
-            <span class="consolas-regular-normal-azure-radiance-9px">if</span
-            ><span class="consolas-regular-normal-white-9px"> user == </span
-            ><span class="consolas-regular-normal-green-9px">&#39;Tech Enthusiast&#39;</span
-            ><span class="consolas-regular-normal-white-9px">: <br />&nbsp;&nbsp;&nbsp;&nbsp;</span
-            ><span class="span-6">print</span><span class="consolas-regular-normal-white-9px">(</span
-            ><span class="consolas-regular-normal-green-9px">&#34;</span
-            ><span class="consolas-regular-normal-white-9px">📂 </span
-            ><span class="consolas-regular-normal-green-9px">GitHub Codebase: Dive into Our Projects!&#34;</span
-            ><span class="consolas-regular-normal-white-9px">) <br /><br /></span
-            ><span class="consolas-regular-normal-azure-radiance-9px">class</span
-            ><span class="consolas-regular-normal-white-9px">&nbsp;</span
-            ><span class="consolas-regular-normal-red-9px">GitHubProjects</span
-            ><span class="consolas-regular-normal-white-9px">: <br />&nbsp;&nbsp;&nbsp;&nbsp;</span
-            ><span class="consolas-regular-normal-azure-radiance-9px">def</span
-            ><span class="consolas-regular-normal-white-9px">&nbsp;</span
-            ><span class="consolas-regular-normal-red-9px">__init__</span
-            ><span class="consolas-regular-normal-white-9px"
-              >(self): <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.projects = {
-              <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
-            ><span class="consolas-regular-normal-green-9px">&#39;SupportBot&#39;</span
-            ><span class="consolas-regular-normal-white-9px">: </span
-            ><span class="consolas-regular-normal-green-9px">&#39;</span
-            ><span class="consolas-regular-normal-white-9px">🤖 </span
-            ><span class="consolas-regular-normal-green-9px">A ticket support bot crafted in Python.&#39;</span
-            ><span class="consolas-regular-normal-white-9px"
-              >, <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
-            ><span class="consolas-regular-normal-green-9px">&#39;KaraokeApp&#39;</span
-            ><span class="consolas-regular-normal-white-9px">: </span
-            ><span class="consolas-regular-normal-green-9px">&#39;</span
-            ><span class="consolas-regular-normal-white-9px">🎤 </span
-            ><span class="consolas-regular-normal-green-9px"
-              >Karaoke magic where singers hear the original track. Again, Python-powered!&#39;</span
-            ><span class="consolas-regular-normal-white-9px"
-              >, <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span
-            ><span class="consolas-regular-normal-green-9px"> &#39;ImageLabeler&#39;</span
-            ><span class="consolas-regular-normal-white-9px">: </span
-            ><span class="consolas-regular-normal-green-9px">&#39;</span
-            ><span class="consolas-regular-normal-white-9px">🖼️ </span
-            ><span class="consolas-regular-normal-green-9px">AI-driven image labeling in real-time.&#39;</span
-            ><span class="consolas-regular-normal-white-9px"
-              >, <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
-            ><span class="consolas-regular-normal-green-9px">&#39;EscapeRoomPassword&#39;</span
-            ><span class="consolas-regular-normal-white-9px">: </span
-            ><span class="consolas-regular-normal-green-9px">&#39;</span
-            ><span class="consolas-regular-normal-white-9px">🔐 </span
-            ><span class="consolas-regular-normal-green-9px"
-              >Unity-based password introduction for an escape room challenge.</span
-            ><span class="consolas-regular-normal-white-9px"
-              >&#39; <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} <br />&nbsp;&nbsp;&nbsp;&nbsp;
-              <br />&nbsp;&nbsp;&nbsp;&nbsp;</span
-            ><span class="consolas-regular-normal-azure-radiance-9px">def</span
-            ><span class="consolas-regular-normal-white-9px">&nbsp;</span
-            ><span class="consolas-regular-normal-red-9px">showcase</span
-            ><span class="consolas-regular-normal-white-9px"
-              >(self): <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
-            ><span class="consolas-regular-normal-azure-radiance-9px">for</span
-            ><span class="consolas-regular-normal-white-9px"> name, desc </span
-            ><span class="consolas-regular-normal-azure-radiance-9px">in</span
-            ><span class="consolas-regular-normal-white-9px">
-              self.projects.items():
-              <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
-            ><span class="span-6">print</span><span class="consolas-regular-normal-white-9px">(</span
-            ><span class="consolas-regular-normal-green-9px">f&#34;{name}: {desc}&#34;</span
-            ><span class="consolas-regular-normal-white-9px"
-              >) <br />
-              <br /># Let&#39;s see what&#39;s inside: <br />repo = GitHubProjects() <br />repo.showcase()</span
-            >
-          </p>
-        </div>
-        <div class="frame-67">
-          <div class="frame-68">
-            <div class="frame-69">
-              <p class="the-power-of-code-2 valign-text-middle montserrat-bold-white-32px">
-                🧑‍💻&nbsp;&nbsp;The power of code
-              </p>
-            </div>
-            <div class="frame-70">
-              <p class="feel-the-magic-of-2 valign-text-middle">
-                <span
-                  ><span class="notosans-light-white-19px"
-                    >Feel the magic 🪄 of code by diving into our innovative projects. My </span
-                  ><a href="https://github.com/lakescorp/" target="_blank"
-                    ><span class="span-7 notosans-light-white-19px">GitHub</span></a
-                  ><span class="notosans-light-white-19px">
-                    is a canvas, and Python (plus a sprinkle of Unity) is my paint! 🎨</span
-                  >
-                </span>
-              </p>
-            </div>
-          </div>
-          <div class="frame-71">
-            <a href="https://github.com/lakescorp/" target="_blank">
-              <div class="github-button-2">
-                <img
-                  class="vector-9"
-                  src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                  anima-src="https://cdn.animaapp.com/projects/6512e9693906ea530ab4adce/releases/65181ecefbb7a3a4593be4ea/img/vector-4@2x.png"
-                  alt="Vector"
-                />
-                <div class="go-now-6 valign-text-middle go-now notosans-normal-white-24px">Go now!</div>
-              </div></a
-            >
-          </div>
-        </div>
-      </div>
-      <div class="gamepanel-2">
-        <div class="frame-72"></div>
-        <div class="frame-73">
-          <div class="frame-74">
-            <p class="game-development-journey-2 valign-text-middle montserrat-bold-white-32px">
-              🎮 Game Development Journey 🕹️
-            </p>
-          </div>
-          <div class="frame-75">
-            <p class="ever-since-i-can-rem-2 valign-text-middle notosans-light-white-19px">
-              Ever since I can remember, crafting games has been a passion of mine. 🎲 While my portfolio might not be
-              vast at the moment, 🚀 I&#39;m fervently working towards adding more innovative titles in the future. 💡
-              Join me on this exciting quest! 🛠️🌟
-            </p>
-          </div>
-          <div class="frame-76">
-            <a href="https://lakescorp.itch.io/" target="_blank">
-              <div class="itchio-button-2">
-                <img
-                  class="vector-10"
-                  src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                  anima-src="https://cdn.animaapp.com/projects/6512e9693906ea530ab4adce/releases/65183db189360d82e0195386/img/vector-6@2x.png"
-                  alt="Vector"
-                />
-                <div class="go-now-7 valign-text-middle go-now notosans-normal-white-24px">Go now!</div>
-              </div></a
-            >
-          </div>
-        </div>
-        <div class="frame-77"></div>
-      </div>
-      <div class="apps-panel-2">
-        <div class="apps-4">
-          <div class="frame-78">
-            <div class="frame-79">
-              <div class="overlap-group-4">
-                <div class="frame-80">
-                  <div class="frame-81">
-                    <div class="frame-82">
-                      <p class="apps-from-tools-to-thrills-2 valign-text-middle montserrat-bold-white-32px">
-                        🚀&nbsp;&nbsp;Apps: From Tools to Thrills!
-                      </p>
-                    </div>
-                    <div class="frame-83">
-                      <p class="dive-into-our-dive-2 valign-text-middle">
-                        <span
-                          ><span class="notosans-light-white-19px"
-                            >🌟 Dive into our diverse world of app development! I’am passionate about crafting
-                            everything from handy utilities 🔧️ to engaging games 🎲. Whether you&#39;re in need of a
-                            quirky tambourine app or a dedicated TTS for Twitch, we&#39;ve got it all! Explore and see
-                            what fits your fancy. 🔍Don&#39;t forget to check us out on the</span
-                          ><span class="notosans-medium-white-19px">&nbsp;</span
-                          ><a href="https://play.google.com/store/apps/dev?id=7112554237907399984" target="_blank"
-                            ><span class="span-7 notosans-medium-white-19px">Play Store</span></a
-                          ><span class="notosans-medium-white-19px">!</span>
-                        </span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <a href="https://play.google.com/store/apps/dev?id=7112554237907399984" target="_blank">
-                  <div class="play-store-button-4">
-                    <img
-                      class="vector-11"
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                      anima-src="https://cdn.animaapp.com/projects/6512e9693906ea530ab4adce/releases/65183c3a1cf0d85fdd17dd2f/img/vector-7@2x.png"
-                      alt="Vector"
-                    />
-                    <div class="go-now-8 valign-text-middle go-now notosans-normal-white-24px">Go now!</div>
-                  </div></a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="frame-84">
-            <div class="frame-85">
-              <img
-                class="x642shots_so-1-2"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                anima-src="https://cdn.animaapp.com/projects/6512e9693906ea530ab4adce/releases/6516b4b15a2f0035c9312de1/img/642shots-so-1.png"
-                alt="642shots_so 1"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="modelos-3d-2">
-        <div class="frame-86">
-          <div class="overlap-group-5">
-            <img
-              class="captura-de-pantalla-2023-09-26-232655-1-2"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-              anima-src="https://cdn.animaapp.com/projects/6512e9693906ea530ab4adce/releases/65183db189360d82e0195386/img/captura-de-pantalla-2023-09-26-232655-1-1@2x.png"
-              alt="Captura de pantalla 2023-09-26 232655 1"
-            />
-            <img
-              class="polygon-1-2"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-              anima-src="https://cdn.animaapp.com/projects/6512e9693906ea530ab4adce/releases/65184a09b96aa1cc1a5828f8/img/polygon-1-2.png"
-              alt="Polygon 1"
-            />
-          </div>
-        </div>
-        <div class="frame-87">
-          <div class="frame-88">
-            <div class="frame-60">
-              <p class="beyond-coding-my-artistic-ventures-2 valign-text-middle montserrat-bold-white-32px">
-                🎨 Beyond Coding: My Artistic Ventures
-              </p>
-            </div>
-            <div class="frame-60">
-              <p class="while-coding-is-my-2 valign-text-middle notosans-light-white-19px">
-                While 💻 coding is my main passion, I&#39;m also captivated by the world of digital art. Dive into my
-                collection of 🎲 voxel, 🗿 high poly, and 📏 low poly 3D models. Unveiling a different side of
-                creativity, where programming meets art! 🖌️🌌
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="frame-89"></div>
-      </div>
-      <div class="social-media-2">
-        <p class="follow-me-on-social-media-2 valign-text-middle montserrat-bold-white-32px">
-          Follow me on Social Media
-        </p>
-        <a href="https://linktr.ee/lakescorp" target="_blank">
-          <div class="play-store-button-5">
-            <img
-              class="vector-12"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-              anima-src="https://cdn.animaapp.com/projects/6512e9693906ea530ab4adce/releases/65183db189360d82e0195386/img/vector-8@2x.png"
-              alt="Vector"
-            />
-            <div class="linktree-2 valign-text-middle notosans-normal-white-24px">Linktree</div>
-          </div></a
-        >
-      </div>
-    </div>
+    </footer>
     <script>
-      isHidden = function (e) {
-        if (!(e instanceof HTMLElement)) return false;
-        if (getComputedStyle(e).display == "none") return true;
-        else if (e.parentNode && isHidden(e.parentNode)) return true;
-        return false;
-      };
+      const phrases = [
+        "🧬 Developing local-first bioinformatics tools like PS Analyzer & Bio-Engine.",
+        "🤖 Training machine learning models & DNA foundation embeddings (ALPHAGenome).",
+        "💻 Crafting full-stack software from Interactive Medical Timelines to CLI tools.",
+        "🎨 Designing 3D voxel models, low-poly art, and indie games."
+      ];
 
-      loadAsyncSrcForTag = function (tag) {
-        var elements = document.getElementsByTagName(tag);
-        var toLoad = [];
-        for (var i = 0; i < elements.length; i++) {
-          var e = elements[i];
-          var src = e.getAttribute("src");
-          var loaded =
-            src != undefined &&
-            src.length > 0 &&
-            src != "data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==";
-          if (loaded) continue;
-          var asyncSrc = e.getAttribute("anima-src");
-          if (asyncSrc == undefined || asyncSrc.length == 0) continue;
-          if (isHidden(e)) continue;
-          toLoad.push(e);
+      let phraseIndex = 0;
+      let characterIndex = 0;
+      const speed = 30; 
+      const delayBetweenPhrases = 2500; 
+      const typewriterElement = document.getElementById("typewriter");
+
+      function type() {
+        if (characterIndex < phrases[phraseIndex].length) {
+          typewriterElement.textContent += phrases[phraseIndex].charAt(characterIndex);
+          characterIndex++;
+          setTimeout(type, speed);
+        } else {
+          setTimeout(erase, delayBetweenPhrases);
         }
-        // Top first
-        toLoad.sort(function (a, b) {
-          return getTop(a) - getTop(b);
-        });
-        for (var i = 0; i < toLoad.length; i++) {
-          var e = toLoad[i];
-          var asyncSrc = e.getAttribute("anima-src");
-          e.setAttribute("src", asyncSrc);
+      }
+
+      function erase() {
+        if (characterIndex > 0) {
+          typewriterElement.textContent = phrases[phraseIndex].substring(0, characterIndex - 1);
+          characterIndex--;
+          setTimeout(erase, speed / 2);
+        } else {
+          phraseIndex = (phraseIndex + 1) % phrases.length;
+          setTimeout(type, 500);
         }
-      };
+      }
 
-      pauseHiddenVideos = function (tag) {
-        var elements = document.getElementsByTagName("video");
-        for (var i = 0; i < elements.length; i++) {
-          var e = elements[i];
-          var isPlaying = !!(e.currentTime > 0 && !e.paused && !e.ended && e.readyState > 2);
-          var isHiddenStatus = isHidden(e);
-          if (!isPlaying && !isHiddenStatus && e.getAttribute("autoplay") == "autoplay") {
-            e.play();
-          } else if (isPlaying && isHiddenStatus) {
-            e.pause();
-          }
-        }
-      };
-
-      loadAsyncSrc = function (tag) {
-        loadAsyncSrcForTag("img");
-        loadAsyncSrcForTag("iframe");
-        loadAsyncSrcForTag("video");
-        pauseHiddenVideos();
-      };
-
-      var getTop = function (e) {
-        var top = 0;
-        do {
-          top += e.offsetTop || 0;
-          e = e.offsetParent;
-        } while (e);
-        return top;
-      };
-
-      // On load
-      loadAsyncSrc();
-
-      // On resize
-      old_onResize = window.onresize;
-      new_onResize = undefined;
-
-      updateOnResize = function () {
-        if (new_onResize == undefined || window.onresize != new_onResize) {
-          new_onResize = function (x) {
-            if (old_onResize != undefined) old_onResize(x);
-            loadAsyncSrc();
-          };
-          window.onresize = new_onResize;
-          // Make sure not overriden
-          setTimeout(function () {
-            updateOnResize();
-          }, 3000);
-        }
-      };
-      updateOnResize();
-
-      // IE
-      setTimeout(function () {
-        loadAsyncSrc();
-      }, 200);
+      document.addEventListener("DOMContentLoaded", () => {
+        setTimeout(type, 1000);
+      });
     </script>
   </body>
 </html>
