@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Explore the legacy and mobile application archives of LagosProject, featuring utility tools, companions, and retro projects."/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LagosProject - Mobile & Legacy Archives</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="stylesheet" type="text/css" href="styleguide.css" />
+    <link rel="stylesheet" type="text/css" href="globals.css" />
+    <script src="background.js" defer></script>
+    <style>
+      .archive-header {
+        padding-top: 160px;
+        padding-bottom: 40px;
+        text-align: center;
+      }
+      .archive-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+        gap: 2rem;
+        padding-bottom: 80px;
+      }
+      .archive-card {
+        background: var(--bg-card);
+        border: 1px solid var(--border-card);
+        border-radius: 16px;
+        padding: 24px;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 1.5rem;
+      }
+      .archive-card:hover {
+        background: var(--bg-card-hover);
+        border-color: var(--border-card-hover);
+        transform: translateY(-4px);
+        box-shadow: 0 15px 30px rgba(0, 163, 255, 0.05);
+      }
+      .archive-tag {
+        font-family: var(--font-mono);
+        font-size: 0.75rem;
+        color: var(--accent-blue);
+        background: rgba(0, 163, 255, 0.08);
+        padding: 3px 8px;
+        border-radius: 4px;
+        width: fit-content;
+      }
+      .archive-tag.game {
+        color: var(--accent-red);
+        background: rgba(255, 51, 102, 0.08);
+      }
+      .archive-title {
+        font-size: 1.35rem;
+        font-weight: 700;
+        margin: 0;
+        color: var(--text-primary);
+      }
+      .archive-desc {
+        font-size: 0.95rem;
+        color: var(--text-secondary);
+        line-height: 1.5;
+        flex-grow: 1;
+      }
+      .archive-links {
+        display: flex;
+        gap: 1rem;
+      }
+      .archive-btn {
+        font-size: 0.85rem;
+        padding: 8px 16px;
+        border-radius: 20px;
+        font-weight: 500;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        border: 1px solid var(--border-card);
+        transition: all 0.2s ease;
+        background: rgba(255, 255, 255, 0.02);
+      }
+      .archive-btn:hover {
+        background: rgba(255, 255, 255, 0.07);
+        border-color: var(--border-card-hover);
+        color: var(--text-primary);
+      }
+      .archive-btn.primary {
+        background: var(--accent-blue-gradient);
+        border-color: rgba(255, 255, 255, 0.1);
+        color: white;
+      }
+      .archive-btn.primary:hover {
+        box-shadow: 0 5px 15px rgba(0, 163, 255, 0.3);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header / Navigation -->
+    <header class="header">
+      <div class="container header-container">
+        <a href="./" class="logo" id="nav-logo">
+          <img class="logo-img" src="img/logo.png" alt="LagosProject Logo" />
+          <span class="logo-text">LagosProject</span>
+        </a>
+        <nav class="nav-links">
+          <a href="./" class="nav-link" id="nav-home">
+            <svg viewBox="0 0 24 24">
+              <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+            </svg>
+            <span>Home</span>
+          </a>
+          <a href="./profiles/" class="nav-link" id="nav-profiles">
+            <svg viewBox="0 0 24 24">
+              <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/>
+            </svg>
+            <span>Profiles</span>
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="container">
+      <section class="archive-header">
+        <h1 class="hero-title" style="font-size: 3rem; margin-bottom: 1rem;">Mobile & Legacy Archives</h1>
+        <p class="section-text" style="max-width: 600px; margin: 0 auto;">
+          An archive of early mobile experiments, utilities, and casual game companions developed by <strong>LagosProject</strong>. These projects serve as stepping stones in our development journey.
+        </p>
+      </section>
+
+      <!-- Archive Grid -->
+      <section class="archive-grid">
+        
+        <!-- Easy Navigator -->
+        <div class="archive-card">
+          <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+            <span class="archive-tag">Utility</span>
+            <h2 class="archive-title">Easy Navigator</h2>
+          </div>
+          <p class="archive-desc">
+            A lightweight, security-first web browser designed for simple and fast internet browsing without tracker scripts, local cookies, or background data collection.
+          </p>
+          <div class="archive-links">
+            <a href="EasyNavigator/privacy-policy.html" class="archive-btn" target="_blank">
+              <span>Privacy Policy</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Licha -->
+        <div class="archive-card">
+          <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+            <span class="archive-tag">Utility</span>
+            <h2 class="archive-title">Licha</h2>
+          </div>
+          <p class="archive-desc">
+            A specialized Twitch chat accessibility tool providing Text-to-Speech (TTS) integration, enabling streamers and gamers to listen to Twitch chat logs out loud.
+          </p>
+          <div class="archive-links">
+            <a href="Licha/privacy-policy.html" class="archive-btn" target="_blank">
+              <span>Privacy Policy</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Tambourine -->
+        <div class="archive-card">
+          <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+            <span class="archive-tag">Entertainment</span>
+            <h2 class="archive-title">Tambourine (Pandereta)</h2>
+          </div>
+          <p class="archive-desc">
+            A virtual, responsive tambourine app for Android devices. Simulates realistic instrument responses using modern physical acceleration triggers.
+          </p>
+          <div class="archive-links">
+            <a href="Tambourine/privacy-policy.html" class="archive-btn" target="_blank">
+              <span>Privacy Policy</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Twister Roulette -->
+        <div class="archive-card">
+          <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+            <span class="archive-tag game">Game Companion</span>
+            <h2 class="archive-title">Twister Roulette</h2>
+          </div>
+          <p class="archive-desc">
+            An automated spin companion app for Twister games, replacing physical boards with digital layouts and dynamic audio cues.
+          </p>
+          <div class="archive-links">
+            <a href="TwisterRoulette/privacypolicy.html" class="archive-btn" target="_blank">
+              <span>Privacy Policy</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Jumanji -->
+        <div class="archive-card">
+          <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+            <span class="archive-tag game">Game Companion</span>
+            <h2 class="archive-title">Jumanji Companion</h2>
+          </div>
+          <p class="archive-desc">
+            An interactive board game helper and soundboard simulator designed to enhance Jumanji-themed gameplay sessions.
+          </p>
+          <div class="archive-links">
+            <a href="Jumanji/privacy-policy.html" class="archive-btn" target="_blank">
+              <span>Privacy Policy</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- FunCoStory -->
+        <div class="archive-card">
+          <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+            <span class="archive-tag">Entertainment</span>
+            <h2 class="archive-title">FunCoStory</h2>
+          </div>
+          <p class="archive-desc">
+            An interactive storytelling application featuring casual narratives and game mechanics.
+          </p>
+          <div class="archive-links">
+            <a href="FunCoStory/privacy-policy.html" class="archive-btn" target="_blank">
+              <span>Privacy Policy</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- HardTyles -->
+        <div class="archive-card">
+          <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+            <span class="archive-tag game">Game</span>
+            <h2 class="archive-title">HardTyles</h2>
+          </div>
+          <p class="archive-desc">
+            A challenging grid-based puzzle game involving spatial movement and tile placement strategies.
+          </p>
+          <div class="archive-links">
+            <a href="HardTyles/privacy-policy.html" class="archive-btn" target="_blank">
+              <span>Privacy Policy</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- HowWouldTheTranslatorSay -->
+        <div class="archive-card">
+          <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+            <span class="archive-tag">Utility</span>
+            <h2 class="archive-title">How Would The Translator Say?</h2>
+          </div>
+          <p class="archive-desc">
+            A quick translation and language learning helper app for testing phrases and verifying pronunciation.
+          </p>
+          <div class="archive-links">
+            <a href="HowWouldTheTranslatorSay/privacy-policy.html" class="archive-btn" target="_blank">
+              <span>Privacy Policy</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- La Cueva -->
+        <div class="archive-card">
+          <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+            <span class="archive-tag game">Game</span>
+            <h2 class="archive-title">La Cueva</h2>
+          </div>
+          <p class="archive-desc">
+            A retro-style adventure game involving pathfinding exploration through dark cave structures.
+          </p>
+          <div class="archive-links">
+            <a href="LaCueva/privacy-policy.html" class="archive-btn" target="_blank">
+              <span>Privacy Policy</span>
+            </a>
+          </div>
+        </div>
+
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container" style="display: flex; flex-direction: column; align-items: center; gap: 1.5rem;">
+        <p class="section-text" style="font-size: 0.95rem;">
+          For inquiries or support regarding these legacy apps, reach out at <a href="mailto:pablofdezlagos@gmail.com">pablofdezlagos@gmail.com</a>
+        </p>
+        <p class="copyright">&copy; 2026 LagosProject. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

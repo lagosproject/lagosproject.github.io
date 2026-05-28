@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="description" content="Discover the portfolio of Pablo Fernández Lagos (LagosProject), featuring cutting-edge projects in bioinformatics, artificial intelligence, software development, and digital art."/>
+    <meta name="description" content="Discover the Digital Laboratory of Pablo Fernández Lagos (LagosProject), featuring cutting-edge projects in clinical bioinformatics, artificial intelligence, software engineering, and creative voxel art."/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pablo Fernández Lagos - AI, Software & Bioinformatics</title>
+    <title>LagosProject - Digital Laboratory storefront</title>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     <link rel="stylesheet" type="text/css" href="index.css" />
     <link rel="stylesheet" type="text/css" href="styleguide.css" />
@@ -20,35 +20,23 @@
           <span class="logo-text">LagosProject</span>
         </a>
         <nav class="nav-links">
-          <a href="https://x.com/lagos_project" target="_blank" class="nav-link" id="nav-news">
-            <svg viewBox="0 0 24 24">
-              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-            </svg>
-            <span>News</span>
+          <a href="#pillar-a" class="nav-link" id="nav-bio">
+            <span>Bioinformatics</span>
           </a>
-          <a href="https://play.google.com/store/apps/dev?id=7112554237907399984" target="_blank" class="nav-link" id="nav-apps">
-            <svg viewBox="0 0 24 24">
-              <path d="M22.018 13.298l-3.919 2.218-3.515-3.493 3.543-3.521 3.891 2.202a1.49 1.49 0 0 1 0 2.594zM1.337.924a1.486 1.486 0 0 0-.112.568v21.017c0 .217.045.419.124.6l11.155-11.087L1.337.924zm12.207 10.065l3.258-3.238L3.45.195a1.466 1.466 0 0 0-.946-.179l11.04 10.973zm0 2.067l-11 10.933c.298.036.612-.016.906-.183l13.324-7.54-3.23-3.21z"/>
-            </svg>
-            <span>Apps</span>
+          <a href="#pillar-b" class="nav-link" id="nav-ai">
+            <span>AI Solutions</span>
           </a>
-          <a href="https://lagosproject.itch.io/" target="_blank" class="nav-link" id="nav-games">
-            <svg viewBox="0 0 24 24">
-              <path d="M21 6H3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-10 7H8v3H6v-3H3v-2h3V8h2v3h3v2zm4.5 3c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm3-3c-.83 0-1.5-.67-1.5-1.5S17.67 10 18.5 10s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/>
-            </svg>
-            <span>Games</span>
-          </a>
-          <a href="https://www.linkedin.com/in/pabloferlagos" target="_blank" class="nav-link" id="nav-linkedin">
-            <svg viewBox="0 0 24 24">
-              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-            </svg>
-            <span>LinkedIn</span>
+          <a href="#pillar-c" class="nav-link" id="nav-creative">
+            <span>Creative Sandbox</span>
           </a>
           <a href="./profiles/" class="nav-link" id="nav-profiles">
             <svg viewBox="0 0 24 24">
               <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/>
             </svg>
             <span>Profiles</span>
+          </a>
+          <a href="archives.html" class="nav-link" id="nav-archives">
+            <span>Archives</span>
           </a>
         </nav>
       </div>
@@ -59,7 +47,9 @@
       
       <!-- Hero Section -->
       <section class="hero" id="hero-section">
-        <h1 class="hero-title">LagosProject</h1>
+        <div class="hero-title-container">
+          <h1 class="hero-title-3d">LagosProject</h1>
+        </div>
         
         <div class="terminal-window">
           <div class="terminal-header">
@@ -78,230 +68,664 @@
         </div>
       </section>
 
-      <!-- About Section -->
-      <section class="section" id="about-section">
+      <!-- Identity & Mission Section -->
+      <section class="pillars-section" id="about-section">
+        
+        <!-- Three Columns representing Strategic Pillars -->
+        <div class="pillars-grid">
+          
+          <!-- Pillar A Card -->
+          <a href="#pillar-a" class="pillar-card pillar-a">
+            <span class="pillar-icon">🧬</span>
+            <h3 class="pillar-title">Clinical Bioinformatics</h3>
+            <p class="pillar-desc">
+              High-performance genomic analyzers, variant-calling backends, and live browser-based DNA embedding UMAP visualizers.
+            </p>
+            <span class="pillar-action">Explore Command Center &rarr;</span>
+          </a>
+
+          <!-- Pillar B Card -->
+          <a href="#pillar-b" class="pillar-card pillar-b">
+            <span class="pillar-icon">🧠</span>
+            <h3 class="pillar-title">AI Solutions</h3>
+            <p class="pillar-desc">
+              Research-driven ML classification pipelines, neural voice conversion tools, and ViT/DETR zero-shot computer vision utilities.
+            </p>
+            <span class="pillar-action">Enter Utility Wing &rarr;</span>
+          </a>
+
+          <!-- Pillar C Card -->
+          <a href="#pillar-c" class="pillar-card pillar-c">
+            <span class="pillar-icon">🎨</span>
+            <h3 class="pillar-title">Creative Sandbox</h3>
+            <p class="pillar-desc">
+              Arcade game experiments exploring retro mechanics, low-poly 3D voxel galleries, and vocalist-centric audio utilities.
+            </p>
+            <span class="pillar-action">Visit Sandbox &rarr;</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- Pillar A Details: The Clinical Command Center -->
+      <section class="section" id="pillar-a">
         <div class="section-grid">
           <div class="section-info">
-            <h2 class="section-title">About Me & LagosProject</h2>
+            <h2 class="section-title">🧬 The Clinical Command Center</h2>
             <p class="section-text">
-              Hi, I'm <strong>Pablo Fernández Lagos</strong>. I am a Computer Engineer specialized in Artificial Intelligence, currently studying Bioinformatics and Data Science in Personalized Precision Medicine at the Instituto de Salud Carlos III.
+              We build unified, clinical-grade bioinformatics software systems. Our flagship workflow combines <strong>PS Analyzer</strong> and <strong>Bio-Engine</strong> into a high-performance Sanger sequence variant interpretation ecosystem.
             </p>
-            <p class="section-text">
-              <strong>LagosProject</strong> is my digital canvas where I fuse my expertise in AI and software development with the healthcare sector, creating open-source bioinformatics tools, apps, games, and 3D digital art.
+            <p class="section-text" style="font-size: 0.95rem; border-left: 2px solid var(--accent-blue); padding-left: 1rem; color: var(--text-secondary);">
+              <strong>PS Analyzer</strong> provides the secure, local-first Angular/Tauri interface for clinical variant visualization, while <strong>Bio-Engine</strong> operates as the asynchronous Python backend, handling heavy alignments with Tracy and functional predictions with VEP.
             </p>
             <div class="stack-badges">
-              <span class="stack-badge">Python</span>
               <span class="stack-badge">Angular</span>
-              <span class="stack-badge">TypeScript</span>
               <span class="stack-badge">Tauri</span>
-              <span class="stack-badge">Flutter</span>
-              <span class="stack-badge">TensorFlow</span>
+              <span class="stack-badge">Python</span>
               <span class="stack-badge">Rust</span>
+              <span class="stack-badge">Tracy</span>
+              <span class="stack-badge">VEP</span>
             </div>
-            <a href="mailto:pablofdezlagos@gmail.com" class="btn btn-blue" id="contact-btn">
-              <svg viewBox="0 0 24 24">
-                <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-              </svg>
-              <span>Get in Touch</span>
-            </a>
           </div>
           <div class="card-wrapper">
-            <div class="glass-card">
-              <img class="thinking-face-img" src="img/thinking-face.png" alt="Thinking Face 3D" />
+            <!-- Sanger Chromatogram Variant Viewer -->
+            <div class="sanger-card">
+              <div class="sanger-header">
+                <div class="sanger-controls">
+                  <div class="sanger-control red"></div>
+                  <div class="sanger-control yellow"></div>
+                  <div class="sanger-control green"></div>
+                </div>
+                <div class="sanger-title">sanger_trace.ab1</div>
+                <div class="sanger-status-dot pulse-green"></div>
+              </div>
+              <div class="sanger-body">
+                <canvas id="sanger-canvas"></canvas>
+                <div class="sanger-sequence-row" id="sanger-sequence">
+                  <!-- dynamically filled with bases -->
+                </div>
+              </div>
+              <div class="sanger-footer">
+                <div class="sanger-variant-badge" id="sanger-variant-badge">
+                  <span id="variant-glow-dot" class="pulse-blue-glow"></span>
+                  <span id="variant-label">c.682G (Wildtype)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- DNA Embeddings UMAP Card -->
+        <div style="margin-top: 4rem; display: grid; grid-template-columns: 1fr 1.2fr; gap: 4rem; align-items: center;">
+          <div class="card-wrapper">
+            <div class="glass-card" style="padding: 20px; background: linear-gradient(135deg, rgba(99, 102, 241, 0.05), rgba(8, 9, 12, 0.95)); border-color: rgba(99, 102, 241, 0.25); text-align: center;">
+              <div style="font-family: var(--font-heading); color: var(--accent-blue); font-size: 1.6rem; text-shadow: 0 0 20px rgba(0, 163, 255, 0.2); font-weight: 800; margin-bottom: 1rem;">
+                UMAP EXPLORER
+              </div>
+              <div style="position: relative; width: 100%; max-width: 380px; margin: 0 auto 1.2rem auto; border-radius: 12px; overflow: hidden; background: rgba(0, 0, 0, 0.2); border: 1px solid rgba(255, 255, 255, 0.05); padding: 8px;">
+                <img src="img/umap-dots.png" alt="UMAP Latent Space Clusters Preview" style="width: 100%; height: auto; border-radius: 8px; display: block; filter: saturate(1.15) brightness(1.05);" />
+              </div>
+              <div style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-muted); max-width: 320px; margin: 0 auto;">
+                Interactive projection of ~12,400 genomic bins and ~25,000 RefSeq genes in 2D latent space.
+              </div>
+            </div>
+          </div>
+          <div class="section-info">
+            <h3 class="section-subtitle">🧬 DNAEmbeddings UMAP Explorer</h3>
+            <p class="section-text">
+              Our <strong>ALPHAGenome UMAP Explorer</strong> is a standout bioinformatics asset designed to visualize genomic bin and pathway embeddings. It runs entirely locally in your browser with zero server latency.
+            </p>
+            <a href="https://lagosproject.github.io/DNAEmbeddings/" target="_blank" class="btn btn-blue" id="launch-umap-btn">
+              <svg viewBox="0 0 24 24">
+                <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/>
+              </svg>
+              <span>Launch Live Demo</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Academic Publications -->
+        <div style="margin-top: 4rem; text-align: center;">
+          <h3 class="section-subtitle" style="font-size: 1.5rem; margin-bottom: 0.5rem;">📚 Academic Rigor & Publications</h3>
+          <p class="section-text" style="max-width: 600px; margin: 0 auto 1.5rem auto; font-size: 0.95rem;">
+            Grounding our software design in peer-reviewed neural network architectures and video coding research.
+          </p>
+          
+          <div class="publications-grid">
+            <!-- Paper 1 -->
+            <div class="publication-card">
+              <div class="pub-badge">EAAI Journal (Elsevier)</div>
+              <h4 class="pub-title">PAVEN: A Perceptual Algorithm for Versatile Video Encoding using Neural Networks</h4>
+              <p class="pub-authors">P. Fernández-Lagos, B. Ríos, H. Kalva, G. Cebrián-Márquez, G. Vigueras, A. J. Díaz-Honrubia</p>
+              <div class="pub-meta">
+                <span>Published: Nov 2025</span>
+                <a href="https://doi.org/10.1016/j.engappai.2025.111664" target="_blank" class="pub-link">
+                  <span>DOI: 10.1016/j.engappai.2025.111664</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Paper 2 -->
+            <div class="publication-card">
+              <div class="pub-badge">IEEE ICME (Conference)</div>
+              <h4 class="pub-title">Saliency Dataset and Predictive Model for Areas of Interest in VVC Perceptual Coding</h4>
+              <p class="pub-authors">J. Kessler-Martín, P. Fernández-Lagos, D. García-Lucas, G. Cebrián-Márquez, B. Ríos, G. Vigueras, A. J. Díaz-Honrubia</p>
+              <div class="pub-meta">
+                <span>Published: Jul 2024</span>
+                <a href="https://doi.org/10.1109/ICME57554.2024.10687868" target="_blank" class="pub-link">
+                  <span>DOI: 10.1109/ICME57554.2024.10687868</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- GitHub Code Section -->
-      <section class="section" id="code-section">
+      <!-- Pillar B Details: The Intelligent Utility Wing -->
+      <section class="section" id="pillar-b">
         <div class="section-grid">
+          <!-- Stacking flow diagram on the left -->
           <div class="card-wrapper">
-            <div class="code-editor">
-              <div class="editor-header">
+            <div class="ensemble-diagram">
+              <div class="ensemble-header">
+                <span class="ensemble-title">music_stacking_pipeline.py</span>
                 <div class="editor-controls">
                   <div class="editor-control"></div>
                   <div class="editor-control"></div>
-                  <div class="editor-control"></div>
                 </div>
-                <div class="terminal-title">projects.py</div>
-                <div style="width: 42px;"></div>
               </div>
-              <div class="editor-body">
-                <div class="line-numbers">
-                  1<br/>2<br/>3<br/>4<br/>5<br/>6<br/>7<br/>8<br/>9<br/>10<br/>11<br/>12<br/>13<br/>14<br/>15
+              <div class="ensemble-flow">
+                <!-- Layer 1: Input -->
+                <div class="ensemble-layer" data-step="0">
+                  <div class="ensemble-node input">Audio Waveform (Mel-Spectrogram)</div>
                 </div>
-                <div class="code-content">
-                  <span class="kw-if">if</span> user == <span class="str">'Tech Enthusiast'</span>:<br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;<span class="builtin">print</span>(<span class="str">"📂 GitHub Codebase: Dive into Our Projects!"</span>)<br/><br/>
-                  <span class="kw-class">class</span> <span class="class-name">GitHubProjects</span>:<br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;<span class="kw-def">def</span> <span class="func-name">__init__</span>(<span class="var-self">self</span>):<br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="var-self">self</span>.projects = {<br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="str">'PSAnalyzer'</span>: <span class="str">'🧬 Automates Sanger variant calling & clinical PDF reports.'</span>,<br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="str">'BioEngine'</span>: <span class="str">'⚡ Orchestrates Tracy & VEP for clinical variant annotation.'</span>,<br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="str">'DNAEmbeddings'</span>: <span class="str">'📊 Visualizes ALPHAGenome DNA embeddings via UMAP explorer.'</span>,<br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="str">'ImageLabelIA'</span>: <span class="str">'📸 Fine-tunes ViT & DETR for zero-shot object detection.'</span><br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;<span class="kw-def">def</span> <span class="func-name">showcase</span>(<span class="var-self">self</span>):<br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="kw-for">for</span> name, desc <span class="kw-in">in</span> <span class="var-self">self</span>.projects.items():<br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="builtin">print</span>(<span class="str">f"{name}: {desc}"</span>)<br/><br/>
-                  repo = GitHubProjects()<br/>
-                  repo.showcase()
+                <div class="ensemble-arrow">&darr;</div>
+                <!-- Layer 2: Feature extraction / CLAP -->
+                <div class="ensemble-layer" data-step="1">
+                  <div class="ensemble-node model">CLAP Embeddings (dense)</div>
+                  <div class="ensemble-node model">BPM & MFCC Features</div>
+                </div>
+                <div class="ensemble-arrow">&darr;</div>
+                <!-- Layer 3: Models -->
+                <div class="ensemble-layer" data-step="2">
+                  <div class="ensemble-node model" style="border-color: rgba(0, 163, 255, 0.25);">XGBoost</div>
+                  <div class="ensemble-node model" style="border-color: rgba(0, 163, 255, 0.25);">LightGBM</div>
+                  <div class="ensemble-node model" style="border-color: rgba(0, 163, 255, 0.25);">RandomForest</div>
+                </div>
+                <div class="ensemble-arrow">&darr;</div>
+                <!-- Layer 4: Stacking -->
+                <div class="ensemble-layer" data-step="3">
+                  <div class="ensemble-node meta">Meta-Classifier Stacking Ensemble</div>
+                </div>
+                <div class="ensemble-arrow">&darr;</div>
+                <!-- Layer 5: Output -->
+                <div class="ensemble-layer" data-step="4">
+                  <div class="ensemble-node input" style="border-color: var(--accent-green);">Predicted Genre (e.g. Bachata, Reggaeton)</div>
                 </div>
               </div>
             </div>
           </div>
+          
           <div class="section-info">
-            <h2 class="section-title">🧑‍💻 Bio & AI Development</h2>
+            <h2 class="section-title">🧠 The Intelligent Utility Wing</h2>
             <p class="section-text">
-              Harnessing the power of code to solve complex biological and data-driven challenges. My <a href="https://github.com/lagosproject/" target="_blank">GitHub</a> showcases open-source pipelines, web-based visualizers, and neural networks, primarily powered by Python, Angular, Tauri, and TypeScript.
+              Translating machine learning research into specialized utilities. We frame our projects as deep pipelines optimized for performance and domain specialists.
             </p>
-            <a href="https://github.com/lagosproject/" target="_blank" class="btn btn-blue" id="github-btn">
-              <svg viewBox="0 0 24 24">
-                <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
-              </svg>
-              <span>Go now!</span>
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <!-- Game Dev Section -->
-      <section class="section" id="games-section">
-        <div class="section-grid">
-          <div class="section-info">
-            <h2 class="section-title">🎮 Interactive Games & Simulations</h2>
+            
+            <h3 class="section-subtitle">🎵 Latin Music Genre Classification</h3>
             <p class="section-text">
-              Beyond utility and bioinformatics, crafting immersive games and interactive systems has always been a key driver of my creativity. Exploring novel mechanics, gameplay design, and spatial UI/UX is part of my constant quest to build engaging digital experiences. Join me on <a href="https://lagosproject.itch.io/" target="_blank">Itch.io</a> to play!
+              A comprehensive deep learning workflow leveraging **CLAP music embeddings** combined with traditional acoustic descriptors (MFCCs, BPM). Tracks are evaluated across multi-model stack configurations to classify genres (Reggaeton, Bachata, Salsa, Merengue).
             </p>
-            <a href="https://lagosproject.itch.io/" target="_blank" class="btn btn-red" id="itchio-btn">
-              <svg viewBox="0 0 24 24">
-                <path d="M21 6H3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-10 7H8v3H6v-3H3v-2h3V8h2v3h3v2zm4.5 3c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm3-3c-.83 0-1.5-.67-1.5-1.5S17.67 10 18.5 10s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/>
-              </svg>
-              <span>Go now!</span>
-            </a>
-          </div>
-          <div class="card-wrapper">
-            <div class="glass-card" style="padding: 12px; background: linear-gradient(135deg, rgba(255, 51, 102, 0.05), rgba(8, 9, 12, 0.95)); border-color: rgba(255, 51, 102, 0.25);">
-              <div style="font-family: var(--font-heading); color: var(--accent-red); font-size: 5rem; text-shadow: 0 0 30px rgba(255, 51, 102, 0.3); font-weight: 800;">
-                PLAY
-              </div>
+            
+            <h3 class="section-subtitle">📸 ImageLabelIA — Tailored for Photographers</h3>
+            <p class="section-text">
+              An AI-driven asset cataloging tool utilizing **Vision Transformers (ViT)** and **DEtection TRansformer (DETR)** to generate high-fidelity tags and zero-shot object detections, streamlining heavy photography workflows.
+            </p>
+            
+            <div class="stack-badges">
+              <span class="stack-badge">PyTorch</span>
+              <span class="stack-badge">CLAP</span>
+              <span class="stack-badge">Vision Transformers</span>
+              <span class="stack-badge">DETR</span>
+              <span class="stack-badge">Scikit-learn</span>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Apps Section -->
-      <section class="section" id="apps-section">
+      <!-- Pillar C Details: The Creative Sandbox -->
+      <section class="section" id="pillar-c">
         <div class="section-grid">
-          <div class="card-wrapper">
-            <div class="app-mockup">
-              <img src="img/apps-showcase.png" alt="Apps Showcase Mockup" />
-            </div>
-          </div>
           <div class="section-info">
-            <h2 class="section-title">📱 Creative Apps & Utilities</h2>
-            <p class="section-text">
-              From robust image classification systems like <strong>ImageLabelIA</strong> utilizing Vision Transformers (ViT) and DETR, to versatile Flutter applications like <strong>Dictation</strong> for voice-to-text transcription. I design and build utility tools that focus on utility and seamless user experiences. Explore them on the <a href="https://play.google.com/store/apps/dev?id=7112554237907399984" target="_blank">Play Store</a>!
+            <h2 class="section-title">🎨 The Creative Sandbox</h2>
+            <p class="section-text" style="font-style: italic; border-left: 2px solid var(--accent-red); padding-left: 1rem; color: var(--text-secondary);">
+              "A space driven by the exploration of novel mechanics and retro aesthetics."
             </p>
-            <a href="https://play.google.com/store/apps/dev?id=7112554237907399984" target="_blank" class="btn btn-green" id="playstore-btn">
-              <svg viewBox="0 0 24 24">
-                <path d="M22.018 13.298l-3.919 2.218-3.515-3.493 3.543-3.521 3.891 2.202a1.49 1.49 0 0 1 0 2.594zM1.337.924a1.486 1.486 0 0 0-.112.568v21.017c0 .217.045.419.124.6l11.155-11.087L1.337.924zm12.207 10.065l3.258-3.238L3.45.195a1.466 1.466 0 0 0-.946-.179l11.04 10.973zm0 2.067l-11 10.933c.298.036.612-.016.906-.183l13.324-7.54-3.23-3.21z"/>
-              </svg>
-              <span>Go now!</span>
+            
+            <h3 class="section-subtitle">🎮 Indie Retro Gaming (itch.io)</h3>
+            <p class="section-text">
+              We craft arcade mechanics and experimental interactive web narratives. Explore <strong>Internet Downloading Adventure</strong> and <strong>Will you be cheated?</strong> directly on our itch.io platform.
+            </p>
+            
+            <h3 class="section-subtitle">🎤 Vocalist-Centric Karaoke App</h3>
+            <p class="section-text">
+              An innovative Python audio setup utilizing the `sounddevice` library. Engineered specifically for singers: routes the original reference track with guide vocals to the performer's headphones, while serving the clean instrumental output to target venue speakers.
+            </p>
+
+            <div class="stack-badges">
+              <span class="stack-badge">Python</span>
+              <span class="stack-badge">Sounddevice</span>
+              <span class="stack-badge">itch.io</span>
+              <span class="stack-badge">3D Low-poly</span>
+            </div>
+            
+            <a href="https://lagosproject.itch.io/" target="_blank" class="btn btn-red" id="itch-sandbox-btn">
+              <span>🕹️ Play on Itch.io</span>
             </a>
           </div>
-        </div>
-      </section>
-
-      <!-- Art Ventures Section -->
-      <section class="section" id="art-section">
-        <div class="section-grid">
-          <div class="section-info">
-            <h2 class="section-title">🎨 3D Modeling & Digital Art</h2>
-            <p class="section-text">
-              Where programming meets aesthetics. I create voxel art, low-poly assets, and high-fidelity 3D models. You can explore and download my 3D assets on <a href="https://sketchfab.com/lagosproject" target="_blank">Sketchfab</a>, <a href="https://www.cgtrader.com/designers/lagosproject" target="_blank">CGTrader</a>, and <a href="https://poly.pizza/u/lakescorp" target="_blank">Poly Pizza</a>, or find digital photography on <a href="https://pixabay.com/es/users/lagosproject-9947812/" target="_blank">Pixabay</a>.
-            </p>
-          </div>
-          <div class="card-wrapper">
-            <div class="art-mockup">
-              <img src="img/artistic-showcase.png" alt="3D Art Collection Showcase" />
+          
+          <!-- Interactive 3D Voxel Assets Gallery -->
+          <div class="card-wrapper" style="flex-direction: column; gap: 1.5rem;">
+            <div style="font-family: var(--font-heading); font-size: 0.9rem; font-weight: 700; color: var(--accent-yellow); text-transform: uppercase; align-self: flex-start; letter-spacing: 1px;">
+              Voxel Asset Registry
+            </div>
+            
+            <div class="voxel-showcase">
+              <a href="https://sketchfab.com/lagosproject" target="_blank" class="voxel-card">
+                <span class="voxel-icon">🛵</span>
+                <h4 class="voxel-name">Delivery Scooter</h4>
+                <span class="voxel-type">Voxel / Vehicle</span>
+              </a>
+              <a href="https://sketchfab.com/lagosproject" target="_blank" class="voxel-card">
+                <span class="voxel-icon">🌲</span>
+                <h4 class="voxel-name">Autumn Tree</h4>
+                <span class="voxel-type">Voxel / Prop</span>
+              </a>
+              <a href="https://sketchfab.com/lagosproject" target="_blank" class="voxel-card">
+                <span class="voxel-icon">🚥</span>
+                <h4 class="voxel-name">Retro Sign</h4>
+                <span class="voxel-type">Voxel / Asset</span>
+              </a>
+              <a href="https://sketchfab.com/lagosproject" target="_blank" class="voxel-card">
+                <span class="voxel-icon">🏎️</span>
+                <h4 class="voxel-name">Low-poly Car</h4>
+                <span class="voxel-type">3D / Vehicle</span>
+              </a>
+            </div>
+            
+            <div style="font-size: 0.8rem; color: var(--text-muted); align-self: center;">
+              Browse models on <a href="https://sketchfab.com/lagosproject" target="_blank" style="color: var(--accent-yellow); text-decoration: underline;">Sketchfab</a> & <a href="https://www.cgtrader.com/designers/lagosproject" target="_blank" style="color: var(--accent-yellow); text-decoration: underline;">CGTrader</a>
             </div>
           </div>
         </div>
       </section>
     </main>
 
-    <!-- Footer -->
+    <!-- Navigation Spoke Footer -->
     <footer class="footer">
-      <div class="container" style="display: flex; flex-direction: column; align-items: center; gap: 2rem;">
-        <div>
-          <h2 class="footer-title">Follow me on Social Media</h2>
-          <a href="./profiles/" class="btn btn-yellow" id="linktree-btn" style="margin: 0 auto;">
-            <svg viewBox="0 0 24 24">
-              <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/>
-            </svg>
-            <span>My Profiles</span>
-          </a>
-        </div>
+      <div class="container" style="display: flex; flex-direction: column; gap: 3rem;">
         
-        <div class="footer-social-icons">
-          <a href="https://www.linkedin.com/in/pabloferlagos" target="_blank" class="social-icon-btn blue" title="LinkedIn Profile">
-            <svg viewBox="0 0 24 24">
-              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+        <!-- Polymath Footer columns -->
+        <div class="footer-polymath">
+          <!-- Col 1: Research -->
+          <div class="footer-col">
+            <h4 class="footer-col-title">Research</h4>
+            <div class="footer-links-list">
+              <a href="https://orcid.org/0009-0006-1833-1387" target="_blank" class="footer-link-item">
+                🧬 ORCID Profile
+              </a>
+              <a href="https://www.linkedin.com/in/pabloferlagos" target="_blank" class="footer-link-item">
+                💼 LinkedIn Profile
+              </a>
+            </div>
+          </div>
+
+          <!-- Col 2: Code & Models -->
+          <div class="footer-col">
+            <h4 class="footer-col-title">Code & Models</h4>
+            <div class="footer-links-list">
+              <a href="https://github.com/lagosproject/" target="_blank" class="footer-link-item">
+                💻 GitHub Repositories
+              </a>
+              <a href="https://huggingface.co/lagosproject" target="_blank" class="footer-link-item">
+                🤗 Hugging Face Models
+              </a>
+              <a href="https://www.kaggle.com/g5fighter" target="_blank" class="footer-link-item">
+                📊 Kaggle Data Science
+              </a>
+            </div>
+          </div>
+
+          <!-- Col 3: Creative -->
+          <div class="footer-col">
+            <h4 class="footer-col-title">Creative</h4>
+            <div class="footer-links-list">
+              <a href="https://lagosproject.itch.io/" target="_blank" class="footer-link-item">
+                🕹️ itch.io Arcade Games
+              </a>
+              <a href="https://sketchfab.com/lagosproject" target="_blank" class="footer-link-item">
+                📐 Sketchfab 3D Models
+              </a>
+              <a href="https://pixabay.com/es/users/lagosproject-9947812/" target="_blank" class="footer-link-item">
+                📸 Pixabay Photography
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Global Contact Registry -->
+        <div class="footer-contact-box">
+          <span style="font-family: var(--font-heading); font-weight: 700; font-size: 1.15rem; color: var(--text-primary);">LagosProject Command Registry</span>
+          <span style="font-size: 0.95rem; color: var(--text-secondary);">For research inquiries, clinical integrations, or digital model commissioning:</span>
+          <a href="mailto:pablofdezlagos@gmail.com" class="btn btn-blue" style="padding: 10px 20px; font-size: 0.95rem;" id="footer-contact-btn">
+            <svg viewBox="0 0 24 24" style="width: 18px; height: 18px;">
+              <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
             </svg>
+            <span>pablofdezlagos@gmail.com</span>
           </a>
-          <a href="https://github.com/lagosproject/" target="_blank" class="social-icon-btn blue" title="GitHub Profile">
-            <svg viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-          </a>
-          <a href="https://play.google.com/store/apps/dev?id=7112554237907399984" target="_blank" class="social-icon-btn green" title="Google Play Store">
-            <svg viewBox="0 0 24 24"><path d="M22.018 13.298l-3.919 2.218-3.515-3.493 3.543-3.521 3.891 2.202a1.49 1.49 0 0 1 0 2.594zM1.337.924a1.486 1.486 0 0 0-.112.568v21.017c0 .217.045.419.124.6l11.155-11.087L1.337.924zm12.207 10.065l3.258-3.238L3.45.195a1.466 1.466 0 0 0-.946-.179l11.04 10.973zm0 2.067l-11 10.933c.298.036.612-.016.906-.183l13.324-7.54-3.23-3.21z"/></svg>
-          </a>
-          <a href="https://lagosproject.itch.io/" target="_blank" class="social-icon-btn red" title="Itch.io Games">
-            <svg viewBox="0 0 24 24"><path d="M21 6H3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-10 7H8v3H6v-3H3v-2h3V8h2v3h3v2zm4.5 3c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm3-3c-.83 0-1.5-.67-1.5-1.5S17.67 10 18.5 10s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>
+          <a href="archives.html" style="font-size: 0.85rem; color: var(--text-muted); text-decoration: underline; margin-top: 0.5rem;">
+            Access Mobile & Legacy Archives
           </a>
         </div>
         
         <p class="copyright">&copy; 2026 LagosProject. All rights reserved.</p>
       </div>
     </footer>
+
+    <!-- Typewriter Script -->
     <script>
-      const phrases = [
-        "🧬 Developing local-first bioinformatics tools like PS Analyzer & Bio-Engine.",
-        "🤖 Training machine learning models & DNA foundation embeddings (ALPHAGenome).",
-        "💻 Crafting full-stack software from Interactive Medical Timelines to CLI tools.",
-        "🎨 Designing 3D voxel models, low-poly art, and indie games."
+      const parts = [
+        { text: "Fusing ", color: "" },
+        { text: "AI and software engineering", color: "var(--accent-blue)" },
+        { text: " with the ", color: "" },
+        { text: "healthcare sector", color: "var(--accent-green)" },
+        { text: " to create open-source ", color: "" },
+        { text: "bioinformatics tools.", color: "var(--accent-yellow)" }
       ];
 
-      let phraseIndex = 0;
-      let characterIndex = 0;
-      const speed = 30; 
-      const delayBetweenPhrases = 2500; 
+      let partIndex = 0;
+      let charIndex = 0;
+      let isErasing = false;
+      const speed = 30;
+      const delayVisible = 8000; // Hold typed text for 8 seconds
       const typewriterElement = document.getElementById("typewriter");
 
-      function type() {
-        if (characterIndex < phrases[phraseIndex].length) {
-          typewriterElement.textContent += phrases[phraseIndex].charAt(characterIndex);
-          characterIndex++;
-          setTimeout(type, speed);
+      function typeLoop() {
+        if (!isErasing) {
+          // Typing
+          if (partIndex < parts.length) {
+            const part = parts[partIndex];
+            
+            // Find or create current part's element
+            let el = typewriterElement.querySelector(`[data-part="${partIndex}"]`);
+            if (!el) {
+              el = document.createElement("span");
+              el.setAttribute("data-part", partIndex);
+              if (part.color) {
+                el.style.color = part.color;
+                el.style.fontWeight = "600";
+              }
+              typewriterElement.appendChild(el);
+            }
+            
+            el.textContent += part.text.charAt(charIndex);
+            charIndex++;
+            
+            if (charIndex >= part.text.length) {
+              partIndex++;
+              charIndex = 0;
+            }
+            setTimeout(typeLoop, speed);
+          } else {
+            // Finished typing all parts
+            isErasing = true;
+            setTimeout(typeLoop, delayVisible);
+          }
         } else {
-          setTimeout(erase, delayBetweenPhrases);
+          // Erasing
+          // Find the last span that has text
+          let el = typewriterElement.querySelector(`[data-part="${partIndex - 1}"]`);
+          if (el) {
+            let txt = el.textContent;
+            if (txt.length > 0) {
+              el.textContent = txt.substring(0, txt.length - 1);
+              setTimeout(typeLoop, speed / 2);
+            } else {
+              // Current span is empty, remove it and move to previous part
+              el.remove();
+              partIndex--;
+              if (partIndex > 0) {
+                setTimeout(typeLoop, speed / 2);
+              } else {
+                // Fully erased
+                isErasing = false;
+                partIndex = 0;
+                charIndex = 0;
+                setTimeout(typeLoop, 500);
+              }
+            }
+          } else {
+            // Fully erased (fallback)
+            isErasing = false;
+            partIndex = 0;
+            charIndex = 0;
+            typewriterElement.innerHTML = "";
+            setTimeout(typeLoop, 500);
+          }
         }
       }
 
-      function erase() {
-        if (characterIndex > 0) {
-          typewriterElement.textContent = phrases[phraseIndex].substring(0, characterIndex - 1);
-          characterIndex--;
-          setTimeout(erase, speed / 2);
-        } else {
-          phraseIndex = (phraseIndex + 1) % phrases.length;
-          setTimeout(type, 500);
+      function initSangerAnimation() {
+        const canvas = document.getElementById("sanger-canvas");
+        if (!canvas) return;
+        const ctx = canvas.getContext("2d");
+        const seqContainer = document.getElementById("sanger-sequence");
+        const badge = document.getElementById("sanger-variant-badge");
+        const badgeLabel = document.getElementById("variant-label");
+        const glowDot = document.getElementById("variant-glow-dot");
+        
+        function resizeCanvas() {
+          const rect = canvas.getBoundingClientRect();
+          canvas.width = rect.width * window.devicePixelRatio;
+          canvas.height = rect.height * window.devicePixelRatio;
+          ctx.scale(window.devicePixelRatio, window.devicePixelRatio);
         }
+        resizeCanvas();
+        window.addEventListener("resize", resizeCanvas);
+        
+        const sequence = "ACGTCTCACGCGATCGTCA";
+        const mutantIndex = 8;
+        const baseSpacing = 52;
+        const sigma = 16;
+        const colors = [
+          "rgba(76, 175, 80, 0.85)",  // A - Green
+          "rgba(33, 150, 243, 0.85)", // C - Blue
+          "rgba(255, 183, 77, 0.85)", // G - Orange
+          "rgba(244, 67, 54, 0.85)"   // T - Red
+        ];
+        
+        let offset = 0;
+        const speed = 0.8;
+        
+        seqContainer.innerHTML = "";
+        for (let i = 0; i < sequence.length; i++) {
+          const span = document.createElement("span");
+          span.textContent = sequence[i];
+          if (i === mutantIndex) {
+            span.classList.add("mutant-text");
+            span.textContent = "Y";
+          }
+          seqContainer.appendChild(span);
+        }
+        const spanElements = seqContainer.querySelectorAll("span");
+        
+        function drawPeaks() {
+          const width = canvas.width / window.devicePixelRatio;
+          const height = canvas.height / window.devicePixelRatio;
+          const centerY = height - 40;
+          
+          ctx.clearRect(0, 0, width, height);
+          
+          ctx.strokeStyle = "rgba(255, 255, 255, 0.05)";
+          ctx.lineWidth = 1;
+          ctx.beginPath();
+          ctx.moveTo(0, centerY);
+          ctx.lineTo(width, centerY);
+          ctx.stroke();
+          
+          ctx.strokeStyle = "rgba(255, 255, 255, 0.15)";
+          ctx.setLineDash([4, 4]);
+          ctx.beginPath();
+          ctx.moveTo(width / 2, 10);
+          ctx.lineTo(width / 2, height - 10);
+          ctx.stroke();
+          ctx.setLineDash([]);
+          
+          const totalWidth = sequence.length * baseSpacing;
+          const startIdx = Math.floor((offset - width / 2 - 100) / baseSpacing);
+          const endIdx = Math.ceil((offset + width / 2 + 100) / baseSpacing);
+          
+          for (let n = 0; n < 4; n++) {
+            ctx.strokeStyle = colors[n];
+            ctx.lineWidth = 2;
+            ctx.beginPath();
+            
+            let first = true;
+            for (let x = 0; x < width; x++) {
+              let peakY = 0;
+              
+              for (let i = startIdx; i <= endIdx; i++) {
+                const actualIndex = ((i % sequence.length) + sequence.length) % sequence.length;
+                const char = sequence[actualIndex];
+                const peakX = i * baseSpacing - offset + width / 2;
+                
+                const dist = x - peakX;
+                const factor = Math.exp(- (dist * dist) / (2 * sigma * sigma));
+                
+                let val = 4;
+                
+                if (actualIndex === mutantIndex) {
+                  if (n === 1 || n === 3) {
+                    val = 65;
+                  }
+                } else {
+                  if (char === 'A' && n === 0) val = 95;
+                  if (char === 'C' && n === 1) val = 95;
+                  if (char === 'G' && n === 2) val = 95;
+                  if (char === 'T' && n === 3) val = 95;
+                }
+                
+                peakY += val * factor;
+              }
+              
+              peakY += Math.sin(x * 0.08 + offset * 0.04) * 1.5 + 2;
+              
+              const drawY = centerY - peakY;
+              
+              if (first) {
+                ctx.moveTo(x, drawY);
+                first = false;
+              } else {
+                ctx.lineTo(x, drawY);
+              }
+            }
+            ctx.stroke();
+          }
+        }
+        
+        function animate() {
+          const totalWidth = sequence.length * baseSpacing;
+          offset = (offset + speed) % totalWidth;
+          
+          drawPeaks();
+          
+          const width = canvas.width / window.devicePixelRatio;
+          let activeIndex = -1;
+          
+          spanElements.forEach((span, idx) => {
+            let peakX = idx * baseSpacing - offset + width / 2;
+            while (peakX < -baseSpacing) peakX += totalWidth;
+            while (peakX > width + baseSpacing) peakX -= totalWidth;
+            
+            span.style.left = `${peakX}px`;
+            
+            const dist = Math.abs(peakX - width / 2);
+            if (dist < baseSpacing / 2) {
+              span.classList.add("active");
+              span.style.transform = "translateX(-50%) scale(1.3)";
+              activeIndex = idx;
+            } else {
+              span.classList.remove("active");
+              span.style.transform = "translateX(-50%) scale(1)";
+            }
+            
+            if (peakX < 10 || peakX > width - 10) {
+              span.style.opacity = "0";
+            } else {
+              span.style.opacity = (dist < baseSpacing / 2) ? "1" : "0.4";
+            }
+          });
+          
+          if (activeIndex === mutantIndex) {
+            badge.classList.add("mutant");
+            badgeLabel.textContent = "🧬 Variant: NM_000251.3(LDLR):c.682C>T (p.Arg228Cys)";
+            glowDot.className = "pulse-red-glow";
+          } else if (activeIndex >= 0) {
+            badge.classList.remove("mutant");
+            const char = sequence[activeIndex];
+            badgeLabel.textContent = `🧬 Sequencing: NM_000251.3:c.${674 + activeIndex}${char} (Wildtype)`;
+            glowDot.className = "pulse-blue-glow";
+          } else {
+            badge.classList.remove("mutant");
+            badgeLabel.textContent = "🧬 Sequencing...";
+            glowDot.className = "pulse-blue-glow";
+          }
+          
+          requestAnimationFrame(animate);
+        }
+        
+        requestAnimationFrame(animate);
+      }
+
+      function initPipelineAnimation() {
+        const flowContainer = document.querySelector(".ensemble-flow");
+        if (!flowContainer) return;
+        
+        const layers = flowContainer.querySelectorAll(".ensemble-layer");
+        const arrows = flowContainer.querySelectorAll(".ensemble-arrow");
+        
+        let currentStep = 0;
+        const totalSteps = layers.length;
+        
+        flowContainer.classList.add("animating");
+        
+        function highlightStep() {
+          layers.forEach((layer, idx) => {
+            if (idx === currentStep) {
+              layer.classList.add("active");
+            } else {
+              layer.classList.remove("active");
+            }
+          });
+          
+          arrows.forEach((arrow, idx) => {
+            if (idx === currentStep) {
+              arrow.classList.add("active");
+            } else {
+              arrow.classList.remove("active");
+            }
+          });
+          
+          currentStep = (currentStep + 1) % totalSteps;
+        }
+        
+        highlightStep();
+        setInterval(highlightStep, 2500); // Cycle highlighting every 2.5 seconds
       }
 
       document.addEventListener("DOMContentLoaded", () => {
-        setTimeout(type, 1000);
+        setTimeout(typeLoop, 1000);
+        initSangerAnimation();
+        initPipelineAnimation();
       });
     </script>
   </body>

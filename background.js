@@ -160,9 +160,10 @@
           if (dist < interactionRadius) {
             const force = (interactionRadius - dist) / interactionRadius;
             
-            // Push downward in world Y. Scale by mouse speed.
-            const targetDisp = -40 * force * (1 + mouse.speed * 0.08);
-            p.vy += (targetDisp - p.dispY) * 0.15;
+            // Push downward in world Y. Scale by mouse speed with a moderate cap.
+            const speedFactor = Math.min(3.0, mouse.speed * 0.03);
+            const targetDisp = -26 * force * (1 + speedFactor);
+            p.vy += (targetDisp - p.dispY) * 0.12;
           }
         }
         
