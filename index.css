@@ -217,7 +217,13 @@ h1, h2, h3, h4 {
   transform-style: preserve-3d;
   display: inline-block;
   user-select: none;
-  animation: morphToIso 8s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  background: linear-gradient(90deg, transparent 40%, var(--accent-blue) 48%, var(--text-primary) 52%, var(--text-primary) 100%) no-repeat;
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.95);
+  animation: sweepAndWobble 8s cubic-bezier(0.4, 0, 0.2, 1) infinite;
 }
 
 .hero-title-3d:hover {
@@ -1196,31 +1202,44 @@ h1, h2, h3, h4 {
   100% { text-shadow: 0 0 45px rgba(255, 255, 255, 0.15); }
 }
 
-@keyframes morphToIso {
-  0%, 25% {
-    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-    color: #ffffff;
-    -webkit-text-stroke: 0px transparent;
+@keyframes sweepAndWobble {
+  0% {
+    background-position: 100% 0;
+    transform: rotateZ(0deg);
   }
-  35% {
-    transform: rotateX(20deg) rotateY(0deg) rotateZ(-15deg);
-    color: transparent;
-    -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.95);
+  15% {
+    background-position: 0% 0;
+    transform: rotateZ(0deg);
   }
-  50%, 75% {
-    transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg);
-    color: transparent;
-    -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.95);
+  /* Pause in outline state */
+  25% {
+    background-position: 0% 0;
+    transform: rotateZ(0deg);
   }
+  /* Rotate slightly to the left over the Z axis */
+  42% {
+    background-position: 0% 0;
+    transform: rotateZ(-5deg);
+  }
+  /* Rotate to the right over the Z axis */
+  58% {
+    background-position: 0% 0;
+    transform: rotateZ(5deg);
+  }
+  /* Return to center */
+  75% {
+    background-position: 0% 0;
+    transform: rotateZ(0deg);
+  }
+  /* Pause in outline state */
   85% {
-    transform: rotateX(20deg) rotateY(0deg) rotateZ(-15deg);
-    color: transparent;
-    -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.95);
+    background-position: 0% 0;
+    transform: rotateZ(0deg);
   }
+  /* Sweep back to filled state */
   100% {
-    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-    color: #ffffff;
-    -webkit-text-stroke: 0px transparent;
+    background-position: 100% 0;
+    transform: rotateZ(0deg);
   }
 }
 
