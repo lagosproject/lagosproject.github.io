@@ -722,10 +722,43 @@
         setInterval(highlightStep, 2500); // Cycle highlighting every 2.5 seconds
       }
 
+      function initHeroTitleTilt() {
+        const title = document.querySelector(".hero-title-3d");
+        if (!title) return;
+
+        window.addEventListener("mousemove", (e) => {
+          const rect = title.getBoundingClientRect();
+          const titleCenterX = rect.left + rect.width / 2;
+          const titleCenterY = rect.top + rect.height / 2;
+
+          const deltaX = e.clientX - titleCenterX;
+          const deltaY = e.clientY - titleCenterY;
+
+          const maxRotationX = 20; // max degrees pitch
+          const maxRotationY = 25; // max degrees yaw
+
+          const rangeX = window.innerWidth / 2;
+          const rangeY = window.innerHeight / 2;
+
+          const percentX = Math.max(-1, Math.min(1, deltaX / rangeX));
+          const percentY = Math.max(-1, Math.min(1, deltaY / rangeY));
+
+          const rotateY = percentX * maxRotationY;
+          const rotateX = -percentY * maxRotationX; // Negative so it tilts towards cursor vertically
+
+          title.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+        });
+
+        window.addEventListener("mouseleave", () => {
+          title.style.transform = "rotateX(0deg) rotateY(0deg)";
+        });
+      }
+
       document.addEventListener("DOMContentLoaded", () => {
         setTimeout(typeLoop, 1000);
         initSangerAnimation();
         initPipelineAnimation();
+        initHeroTitleTilt();
       });
     </script>
   </body>

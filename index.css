@@ -217,17 +217,8 @@ h1, h2, h3, h4 {
   transform-style: preserve-3d;
   display: inline-block;
   user-select: none;
-  background: linear-gradient(90deg, transparent 40%, var(--accent-blue) 48%, var(--text-primary) 52%, var(--text-primary) 100%) no-repeat;
-  background-size: 200% 100%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.95);
-  animation: sweepAndWobble 8s cubic-bezier(0.4, 0, 0.2, 1) infinite;
-}
-
-.hero-title-3d:hover {
-  animation-play-state: paused;
+  color: var(--text-primary);
+  transition: transform 0.15s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 /* Terminal Window Component */
