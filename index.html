@@ -4,11 +4,13 @@
     <meta charset="utf-8" />
     <meta name="description" content="Discover the Digital Laboratory of Pablo Fernández Lagos (LagosProject), featuring cutting-edge projects in clinical bioinformatics, artificial intelligence, software engineering, and creative voxel art."/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google-site-verification" content="google34f995c5b6e35f88" />
     <title>LagosProject - Digital Laboratory storefront</title>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@500;700;800&family=Fira+Code:wght@400;500&display=swap" />
     <link rel="stylesheet" type="text/css" href="index.css" />
-    <link rel="stylesheet" type="text/css" href="styleguide.css" />
-    <link rel="stylesheet" type="text/css" href="globals.css" />
     <script src="background.js" defer></script>
   </head>
   <body>
@@ -16,7 +18,10 @@
     <header class="header">
       <div class="container header-container">
         <a href="#" class="logo" id="nav-logo">
-          <img class="logo-img" src="img/logo.png" alt="LagosProject Logo" />
+          <picture>
+            <source srcset="img/logo.webp" type="image/webp" />
+            <img class="logo-img" src="img/logo.png" alt="LagosProject Logo" width="32" height="32" decoding="async" />
+          </picture>
           <span class="logo-text">LagosProject</span>
         </a>
         <nav class="nav-links">
@@ -77,7 +82,7 @@
           <!-- Pillar A Card -->
           <a href="#pillar-a" class="pillar-card pillar-a">
             <span class="pillar-icon">🧬</span>
-            <h3 class="pillar-title">Clinical Bioinformatics</h3>
+            <h2 class="pillar-title">Clinical Bioinformatics</h2>
             <p class="pillar-desc">
               High-performance genomic analyzers, variant-calling backends, and live browser-based DNA embedding UMAP visualizers.
             </p>
@@ -87,7 +92,7 @@
           <!-- Pillar B Card -->
           <a href="#pillar-b" class="pillar-card pillar-b">
             <span class="pillar-icon">🧠</span>
-            <h3 class="pillar-title">AI Solutions</h3>
+            <h2 class="pillar-title">AI Solutions</h2>
             <p class="pillar-desc">
               Research-driven ML classification pipelines, neural voice conversion tools, and ViT/DETR zero-shot computer vision utilities.
             </p>
@@ -97,7 +102,7 @@
           <!-- Pillar C Card -->
           <a href="#pillar-c" class="pillar-card pillar-c">
             <span class="pillar-icon">🎨</span>
-            <h3 class="pillar-title">Creative Sandbox</h3>
+            <h2 class="pillar-title">Creative Sandbox</h2>
             <p class="pillar-desc">
               Arcade game experiments exploring retro mechanics, low-poly 3D voxel galleries, and vocalist-centric audio utilities.
             </p>
@@ -162,7 +167,10 @@
                 UMAP EXPLORER
               </div>
               <div style="position: relative; width: 100%; max-width: 380px; margin: 0 auto 1.2rem auto; border-radius: 12px; overflow: hidden; background: rgba(0, 0, 0, 0.2); border: 1px solid rgba(255, 255, 255, 0.05); padding: 8px;">
-                <img src="img/umap-dots.png" alt="UMAP Latent Space Clusters Preview" style="width: 100%; height: auto; border-radius: 8px; display: block; filter: saturate(1.15) brightness(1.05);" />
+                <picture>
+                  <source srcset="img/umap-dots.webp" type="image/webp" />
+                  <img src="img/umap-dots.png" alt="UMAP Latent Space Clusters Preview" width="596" height="411" loading="lazy" decoding="async" style="width: 100%; height: auto; aspect-ratio: 596 / 411; border-radius: 8px; display: block; filter: saturate(1.15) brightness(1.05);" />
+                </picture>
               </div>
               <div style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-muted); max-width: 320px; margin: 0 auto;">
                 Interactive projection of ~12,400 genomic bins and ~25,000 RefSeq genes in 2D latent space.
@@ -590,7 +598,7 @@
             ctx.beginPath();
             
             let first = true;
-            for (let x = 0; x < width; x++) {
+            for (let x = 0; x <= width; x += 2) {
               let peakY = 0;
               
               for (let i = startIdx; i <= endIdx; i++) {
@@ -632,7 +640,10 @@
           }
         }
         
-        function animate() {
+        let animId = null;
+        let isVisible = false;
+
+        function renderFrame() {
           const totalWidth = sequence.length * baseSpacing;
           offset = (offset + speed) % totalWidth;
           
@@ -680,10 +691,29 @@
             glowDot.className = "pulse-blue-glow";
           }
           
-          requestAnimationFrame(animate);
+          if (isVisible) {
+            animId = requestAnimationFrame(renderFrame);
+          }
         }
-        
-        requestAnimationFrame(animate);
+
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              isVisible = true;
+              if (!animId) {
+                animId = requestAnimationFrame(renderFrame);
+              }
+            } else {
+              isVisible = false;
+              if (animId) {
+                cancelAnimationFrame(animId);
+                animId = null;
+              }
+            }
+          });
+        }, { threshold: 0.05 });
+
+        observer.observe(canvas);
       }
 
       function initPipelineAnimation() {
